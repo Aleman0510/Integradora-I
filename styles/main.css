@@ -1,3 +1,4 @@
+
 /* Clases para Login*/
 body {
     margin: 0;
@@ -61,4 +62,86 @@ body {
     left: 5px;
     font-size: 12px;
     color: #333;
+  }
+
+/*CLASES PARA index.html/Inicio*/
+.header{
+ overflow: hidden;
+ background-color: #c1b6b6;
+ padding: 20px 10px;
+}
+
+.header_text {
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
+  }
+
+  .header_logo {
+    font-size: 25px;
+    font-weight: bold;
+  }
+
+  .header_right {
+    float: right;
+  }
+
+  .button_header {
+    background-color: #04AA6D;
+    border: none;
+    color: white;
+    padding: 12px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+
+
+  .div_body {
+    display: flex;
+    padding: 20px;
+    gap: 15px;
+   }
+
+   
+  .div_body.a {
+    display: flex;
+    padding: 20px;
+    gap: 15px;
+   }
+
+
+   .footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    color: black ;
+    text-align: center;
+    border: 1px solid #000000;
+}
+
+ 
+  .container {    /*sin uso */
+
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.section {
+  flex: 1;
+  padding: 20px;
+  margin: 10px;
+  border: 1px solid #ccc;
 }

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contenedores lado a lado</title>
+    <style>
+        .container {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+        }
+
+        .section {
+            flex: 1;
+            padding: 20px;
+            margin: 10px;
+            border: 1px solid #ccc;
+        }
+
+        .section1 {
+            background-color: #f0f0f0;
+        }
+
+        .section2 {
+            background-color: #e0e0e0;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="section section1">
+            <h2>Sección 1</h2>
+            <p>Contenido de la primera sección.</p>
+        </div>
+        <div class="section section2">
+            <h2>Sección 2</h2>
+            <p>Contenido de la segunda sección.</p>
+        </div>
+    </div>
+
+</body>
+</html>
