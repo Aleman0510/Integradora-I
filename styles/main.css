@@ -33,7 +33,7 @@
   }
 
   .button_header {
-    background-color: #04AA6D;
+    background-color: #1f1f1f;
     border: none;
     color: white;
     padding: 12px 20px;
@@ -60,6 +60,13 @@
     gap: 15px;
    }
 
+   body {
+    margin: 0;
+    padding: 0;
+    font-family: montserrat;
+    background: linear-gradient(120deg, #f0ebeb);
+    height: 100vh;
+}
 
    .footer {
     position: fixed;
