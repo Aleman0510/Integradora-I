@@ -7,9 +7,7 @@
  border-style: outset;
  border-color: white;
  border-width: 0 1px 1px 1px;
-
-
-
+ height: 50px;
 }
 
 .header_text {
@@ -24,12 +22,24 @@
   }
 
   .header_logo {
-    font-size: 25px;
-    font-weight: bold;
+   display: flex;
+   height: 55px;
+   margin-top: 1px;
+   margin-left: 1px;
   }
+
+  .div_header {   
+    display: flex;
+    justify-content: space-between;
+
+}
 
   .header_right {
     float: right;
+  }
+
+  .header_left {
+    float: left;
   }
 
   .button_header {
