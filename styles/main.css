@@ -41,6 +41,7 @@
  
    .header_left {
      float: left;
+     padding-right: 15px;
    }
  
    .button_header {
@@ -58,14 +59,14 @@
    }
  
  
-   .div_body {
+   .div_body { /*sin uso*/
      display: flex;
      padding: 20px;
      gap: 15px;
     }
  
     
-   .div_body.a {
+   .div_body.a {   /*sin uso*/
      display: flex;
      padding: 20px;
      gap: 15px;
@@ -81,10 +82,10 @@
  
   
    .container {    /*sin uso */
- 
      display: flex;
      justify-content: space-between;
      width: 100%;
+     margin-top: 20px;
  }
  
  .section {
