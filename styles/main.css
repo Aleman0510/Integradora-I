@@ -1,7 +1,7 @@
 /*CLASES PARA index.html/Inicio*/
 .header{
   overflow: hidden;
-  background-color: #f2f0eb;
+  background-color: #f5f5f5;
   padding: 5px 10px;
   position: fixed;
   width: 100%;
@@ -9,6 +9,7 @@
   border-color: white;
   border-width: 0 1px 1px 1px;
   height: 50px;
+
  }
  
  .header_text {
@@ -25,26 +26,29 @@
    .header_logo {
     display: flex;
     height: 55px;
-    margin-top: 1px;
-    margin-left: 1px;
+    float: left;
    }
  
    .div_header {   
      display: flex;
      justify-content: space-between;
+     align-items: center;
+     width: 100%;
  }
- 
+
+ .header_left {
+  margin-right: 20px;
+  
+ }
    .header_right {
-     float: right;
-   }
- 
-   .header_left {
      float: left;
      padding-right: 15px;
+     justify-content:flex-end;
+     align-items:flex-end;
    }
  
    .button_header {
-     background-color: #1f1f1f;
+     background-color: #e9bf8b;
      border: none;
      color: white;
      padding: 12px 20px;
@@ -80,19 +84,26 @@
  }
  
   
-   .container {    /*sin uso */
+   .container {    
      display: flex;
+     flex-direction: column;
      justify-content: space-between;
      width: 100%;
      margin-top: 20px;
  }
  
  .section {
-   flex: 1;
+   display: flex;
    padding: 20px;
    margin: 10px;
-   border: 1px solid #ccc,;
+   justify-content: center;
+   align-items: center ;
+   flex-direction: column;
+   width: 100%;
+   overflow: hidden;
  }
+
+
  
  .footer-1 {
    position: fixed;
@@ -115,6 +126,7 @@
    display: flex;
    justify-content: space-around;
    margin-bottom: 20px;
+   
  }
  
  .footer-column {
@@ -166,3 +178,5 @@
    width: 24px;
    height: 24px;
  }
+
+ 
