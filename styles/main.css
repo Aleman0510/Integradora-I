@@ -9,6 +9,8 @@
   border-color: white;
   border-width: 0 1px 1px 1px;
   height: 50px;
+  top: 0;
+  left: 0;
 
  }
  
@@ -103,70 +105,72 @@
    overflow: hidden;
  }
 
-
- 
- 
+ /*actualizado*/
  footer {
-   background-color: #f4f5f7;
-   padding: 40px 0;
-   font-family: Arial, sans-serif;
- }
- 
- .footer-container {
-   display: flex;
-   justify-content: space-around;
-   margin-bottom: 20px;
-   
- }
- 
- .footer-column {
-   flex: 1;
- }
- 
- .footer-column h4 {
-   font-size: 16px;
-   margin-bottom: 20px;
-   color: #333;
- }
- 
- .footer-column ul {
-   list-style: none;
-   padding: 0;
- }
- 
- .footer-column ul li {
-   margin-bottom: 10px;
- }
- 
- .footer-column ul li a {
-   color: #0079bf;
-   text-decoration: none;
- }
- 
- .footer-column ul li a:hover {
-   text-decoration: underline;
- }
- 
- .footer-bottom {
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
-   border-top: 1px solid #dcdcdc;
-   padding-top: 20px;
- }
- 
- .footer-bottom p {
-   margin: 0;
-   color: #999;
- }
- 
- .social-icons a {
-   margin-left: 10px;
- }
- 
- .social-icons img {
-   width: 24px;
-   height: 24px;
- }
+  background-color: #f4f5f7;
+  padding: 40px 0px;
+  font-family: Arial, sans-serif;
+  position:end;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
 
- 
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 15px;
+  
+}
+
+.footer-column {
+  flex: 1;
+}
+
+.footer-column h4 {
+  font-size: 16px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+  color: #0079bf;
+  text-decoration: none;
+}
+
+.footer-column ul li a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid #dcdcdc;
+  padding-top: 20px;
+}
+
+.footer-bottom p {
+  margin: 0;
+  color: #999;
+  justify-content: center;
+}
+
+.social-icons a {
+  margin-left: 10px;
+}
+
+.social-icons img {
+  width: 24px;
+  height: 24px;
+}
+
