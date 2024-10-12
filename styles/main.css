@@ -105,16 +105,6 @@
 
 
  
- .footer-1 {
-   position: fixed;
-   left: 0;
-   bottom: 0;
-   width: 100%;
-   background-color: rgb(255, 255, 255);
-   color: black ;
-   text-align: center;
-   border: 1px solid #000000;
- }
  
  footer {
    background-color: #f4f5f7;
