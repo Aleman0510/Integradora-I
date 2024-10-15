@@ -1,0 +1,125 @@
+/* Clases para Registro */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: montserrat;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+    background-size: cover;
+    background-image: url('https://www.ctu.com.mx/casas-en-venta/wp-content/uploads/2023/10/Header_Blog_Manual.jpg');
+}
+
+.formulario {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 550px;
+    background: white;
+    border-radius: 10px;
+    font-size: 12px;
+    height: min-content;
+}
+
+.aps{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+#nombre{
+    width: 36%;
+}
+
+#ap1 {
+    margin-right: 10%;
+    width: 220px;
+}
+
+#ap2 {
+    width: 220px;
+    margin-right: 0;
+}
+
+#buton1{
+    margin-right: 30px;
+}
+
+.formulario h1 {
+    text-align: center;
+    padding: 0 0 20px 0;
+    margin-top: 30px;
+    border-bottom: 2px solid black;
+}
+
+.formulario form {
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+
+.input-container {
+    position: relative;
+    border-bottom: 2px solid  #2C3E50;
+    margin: 20px 0;
+}
+
+.input-container input {
+    width: 100%;
+    padding: 10px 0;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    background: none;
+    outline: none;
+}
+
+.input-container label {
+    position: absolute;
+    top: 15%;
+    left: 5px;
+    color: #42738E;
+    transform: translateY(-15%);
+    font-size: 16px;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.input-container input:focus ~ label,
+.input-container input:valid ~ label {
+    top: -5px;
+    left: 5px;
+    font-size: 12px;
+    color:  #2C3E50;
+}
+
+.action-buttons {
+    margin-top: 1.5rem;
+    display: flex;
+}
+
+.action-buttons .btn {
+    display: inline-block; /* Mantiene el tamaño del botón */
+    width: 220px; /* O puedes establecer un ancho específico */
+    padding: 10px 20px; /* Personaliza el padding del botón */
+    border: none; /* Quita el borde si es necesario */
+    background-color: #007bff; /* Color de fondo */
+    color: white; /* Color del texto */
+}
+
+.btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
