@@ -1,7 +1,7 @@
 /*CLASES PARA index.html/Inicio*/
 .header{
   overflow: hidden;
-  background-color: #f5f5f5;
+  background-color: #FAFAFA   ;
   padding: 5px 10px;
   position: fixed;
   width: 100%;
@@ -27,15 +27,20 @@
  
    .header_logo {
     display: flex;
-    height: 55px;
+    height: 65px;
+    width: 65px;
+    margin-right: 20px;
     float: left;
+    background-color: transparent;
+    mix-blend-mode: multiply;
    }
  
    .div_header {   
      display: flex;
      justify-content: space-between;
-     align-items: center;
+     align-items: flex-start;
      width: 100%;
+
  }
 
  .header_left {
@@ -50,7 +55,7 @@
    }
  
    .button_header {
-     background-color: #e9bf8b;
+     background-color: #907761;
      border: none;
      color: white;
      padding: 12px 20px;
@@ -60,7 +65,7 @@
      font-size: 15px;
      margin: 4px 2px;
      cursor: pointer;
-     border-radius: 4px;
+     border-radius: 22px;
    }
  
  
@@ -76,7 +81,7 @@
     align-items: center;
     height: 100vh;
     width:100%;
-    background-color: #ffff;
+    background-color: #FCFCFC ;
     font-family: 'Arial', sans-serif;
  
 }
@@ -85,7 +90,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #ffffff;
+    background-color: #FCFCFC ;
     padding: 30px;
     border-radius: 10px;
     margin-bottom: 25px;
@@ -106,15 +111,19 @@
 }
 
 .header_text_left h2 {
-    color: #2980b9;
+    color: #e9bf8b;
     margin-bottom: 10px;
 }
 
 .header_text_left p {
     color: #34495e;
     margin-bottom: 10px;
-    font-size: 20px;
+    font-size: 18px;
     text-justify:center;
+    line-height: 1.5;
+    text-align: justify;
+    text-justify: inter-word;
+
 }
     
    .container {    
@@ -210,11 +219,11 @@
     width: 100%;
     height: 300px; /* Aumentar la altura */
     overflow: hidden;
-    margin-top: 50px; /* Agregar espacio arriba del carrusel */
+    margin-top: 250px; /* Agregar espacio arriba del carrusel */
 }
 
 figure {
-    position: relative;
+    position:relative;
     left: 0;
     width: 400%; 
     animation: 10s slide infinite;
