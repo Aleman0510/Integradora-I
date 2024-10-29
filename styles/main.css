@@ -12,6 +12,7 @@
     height: 50px;
     top: 0;
     left: 0;
+    margin-bottom: 0;
     z-index: 1000; /* Asegúrate de que el header esté sobre otros elementos */
 }
 .header_text_left {
@@ -255,7 +256,7 @@ color:#614b38;
   width: 100%;
   height: 100%; /* Aumentar la altura se cambio la altura a 100% */
   overflow: hidden;
-  margin-top: 600px; /* Agregar espacio arriba del carrusel */
+  margin-top: 600px; /* Agregar espacio arriba del carrusel  600px*/
   position: relative;   /* Para posicionar elementos dentro del carrusel */
   box-sizing: border-box; /* Evita que paddings afecten el tamaño total */
 }
