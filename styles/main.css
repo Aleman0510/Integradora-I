@@ -15,25 +15,7 @@
     margin-bottom: 0;
     z-index: 1000; /* Asegúrate de que el header esté sobre otros elementos */
 }
-.header_text_left {
-  text-align: center; /* Cambiar de left a center */
-  max-width: 80%; /* Ajustar el ancho máximo del contenido */
-  margin: 0 auto; /* Centrar el bloque en la página */
-}
 
-.header_text_left h2 {
-  color: #e9bf8b;
-  margin-bottom: 10px;
-  text-align: center; /* Asegura que los títulos estén centrados */
-}
-
-.header_text_left p {
-  color: #34495e;
-  margin-bottom: 10px;
-  font-size: 18px;
-  line-height: 1.5;
-  text-align: center; /* Cambiar de justify a center */
-}
 
 .header_text{
   float: left;
