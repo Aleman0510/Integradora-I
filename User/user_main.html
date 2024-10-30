@@ -9,53 +9,75 @@
     <link rel="stylesheet" href="/styles/User_styles/user.css">
 
 
-    <head>
-      <header class ="header">
-          <div class="div_header">
-              
-            <div>
-              <a class="header_logo" href="index.html">
-                  <img src="/assets/Logo UrHomeCuu.jpg"></a>
-              <a  href="index.html" class="header_text">Inicio</a>
-              <a  href ="venta.html" class="header_text">Venta</a>
-              <a  href ="renta.html" class="header_text">Renta</a>
-            </div>
-                      <div class="header_right">
-   
-                         </div>       
-               </div> 
-      </div>
-      </header>
-      </head>
+<head>
+  <header class ="header">
+    <div class="div_header">   
+      <div>
+        <a class="header_logo" href="/index.html">
+        <img src="/assets/inicio_assets/urhomecuu_logo.jpg"></a>
+        <a  href="/index.html" class="header_text">Inicio</a>
+        <a  href ="/venta.html" class="header_text">Venta</a>
+        <a  href ="/renta.html" class="header_text">Renta</a>
+        </div>
+        <div class="header_right">
+        </div>
+      </div> 
+    </div>
+  </header>
+</head>
+       
  
-<body>
+      <body>
+        <div class="sidebar">
+          <a href="#"><i class="fas fa-user"></i>Mi Cuenta</a>
+          <a href="#"><i class="fas fa-home"></i>Mis Propiedades</a>
+          <a href="#"><i class="fas fa-bookmark"></i>Propiedades Guardadas</a>
+          <a href="#"><i class="fas fa-cog"></i>Administrar Suscripción</a>
+          <a href="#"><i class="fas fa-sign-out-alt"></i>Cerrar Sesión</a>
+        </div>
 
-  <div class="sidebar">
-    <a href="#"><i class="fas fa-user"></i>Mi Cuenta</a>
-    <a href="#"><i class="fas fa-home"></i>Mis Propiedades</a>
-    <a href="#"><i class="fas fa-bookmark"></i>Propiedades Guardadas</a>
-    <a href="#"><i class="fas fa-cog"></i>Administrar Suscripción</a>
-    <a href="#"><i class="fas fa-sign-out-alt"></i>Cerrar Sesión</a>
-  </div>
-</body>
-
-  <body class="main_container">
-    <div class="body_container">
-        <h1 class="titulo">¡Encuentra el hogar ideal!</h1>
-        <p class="italic">Encuentra el hogar de tus sueños con la mayor facilidad y confianza.</p>
-
-        <div class="header_text_left">    
-               <h2>¿Por que UrHomeCUU?</h2>
-             <p>En UrHomeCUU, entendemos que encontrar el hogar ideal o vender una propiedad  puede ser un proceso complejo y abrumador. Por eso, hemos diseñado una plataforma sencilla y eficiente que conecta a propietarios e interesados de manera rápida y segura. Nuestro objetivo es brindar a nuestros usuarios las mejores herramientas para comprar, vender o rentar propiedades en Chihuahua y sus alrededores, asegurando que cada transacción  se realice con total confianza.</p>
-             
-          <div class="form-group full-width">
-              <label for="tipo-usuario">Tipo de usuario</label>
-              <input type="text" id="tipo-usuario" value="Propietario (1 propiedad)" disabled>
+        <div class="container_profile">
+          <div class="profile-edit">
+              <h2>Editar perfil</h2>
+              <form>
+                  <div class="form-group full-width">
+                      <label for="profile-pic">Foto de perfil</label>
+                      <input type="file" id="profile-pic">
+                  </div>
+                  <div class="form-group full-width">
+                      <label for="nombre">Nombre(s)</label>
+                      <input type="text" id="nombre" value="">
+                  </div>
+                  <div class="form-group">
+                      <label for="apellido">Apellido paterno</label>
+                      <input type="text" id="apellido" value="">
+                  </div>
+                                  <div class="form-group">
+                      <label for="apellido">Apellido materno</label>
+                      <input type="text" id="apellido" value="">
+                  </div>
+            
+                  <div class="form-group full-width">
+                      <label for="email-contacto">Correo electrónico</label>
+                      <input type="email" id="email-contacto" value="">
+                  </div>
+        
+                  <div class="form-group">
+                      <label for="whatsapp">Número de WhatsApp</label>
+                      <input type="tel" id="whatsapp" value="+52">
+                      <small style="color: red;">Ingresa un número de WhatsApp</small>
+                  </div>
+                  
+                  <div class="form-group full-width">
+                      <label for="tipo-usuario">Tipo de usuario</label>
+                      <input type="text" id="tipo-usuario" value="Propietario (1 propiedad)" disabled>
+                  </div>
+                  <button type="submit" class="save-btn" disabled>Guardar cambios</button>
+              </form>
           </div>
-          <button type="submit" class="save-btn" disabled>Guardar cambios</button>
-      </form>
-  </div>
-</div>
-
+        </div>
+        
+      </body>
+      
 </html>
 </html>
