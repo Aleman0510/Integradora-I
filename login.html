@@ -7,20 +7,19 @@
     <title>Login</title>
     <link rel="stylesheet" href="styles/login.css">
 </head>
-
-<header class ="header">
-    <div class="div_header">
-        
-      <div>
-        <a class="header_logo" href="login.html">
-            <img src="assets/Logo UrHomeCuu.jpg"></a>
-      </div>
-    </div>
-</header>
 <body>
+    <header class="header">
+        <div class="div_header">
+            <div>
+                <a class="header_logo" href="login.html">
+                    <img src="assets/Logo UrHomeCuu.jpg" alt="Logo UrHomeCuu">
+                </a>
+            </div>
+        </div>
+    </header>
     <div class="formulario">
-        <h1>Hola Bienvenido a UrHomeCUU</h1>
-        <h1>Iniciar Sesión</h1>
+        <h1 class="welcome-title">Hola Bienvenido a UrHomeCUU</h1>
+        <h1 class="login-title">Iniciar Sesión</h1>
         <form>
             <div class="input-container">
                 <input type="text" required>
@@ -32,11 +31,13 @@
             </div>
             <div class="action-buttons">
                 <a href="index.html" class="btn">Iniciar</a>
-                <a href="https://www.google.com/search?q=olvidó+su+contraseña" target="_blank" class="btn">Olvidó su Contraseña</a>
-                <a href="registro.html" class="btn">Crear Cuenta</a>
+                <div class="social-login">
+                    <p>Crear cuenta con:</p>
+                    <a href="myaccount.google.com"><img src="assets/logo_google.png"> Google</a>
+                </div>
             </div>
         </form>
-    </div>      
+    </div>
 </body>
 </html>
 
