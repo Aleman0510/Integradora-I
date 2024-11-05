@@ -1,7 +1,7 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #f9f9f9;
-    margin-top: 70px;
+    margin-top: 50px;
 }
 
 .main_container {
@@ -65,4 +65,3 @@ body {
 .contacto_btn:hover {
     background-color: #d4a76b;
 }
-  
