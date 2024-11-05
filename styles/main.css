@@ -1,6 +1,8 @@
 /*CLASES PARA index.html/Inicio*/
 .header {
     overflow: hidden;
+    position:absolute; /*NO MOVER :v*/
+    position:top;
     background-color: #FAFAFA;
     padding: 5px 10px;
     width: 100%;
