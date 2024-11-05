@@ -4,132 +4,125 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <link rel="stylesheet" href="styles/main.css">
+    <title>Venta</title>
     <link rel="stylesheet" href="styles/venta.css">
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
-
-<head>
-<header class ="header">
-    <div class="div_header">
-        
-      <div>
-        <a class="header_logo" href="index.html">
-            <img src="assets/inicio_assets/urhomecuu_logo.jpg"></a>
-        <a  href="index.html" class="header_text">Inicio</a>
-        <a  href ="venta.html" class="header_text">Venta</a>
-        <a  href ="renta.html" class="header_text">Renta</a>
-      </div>
-                <div class="header_right">
-                    <a href="login.html" button class="button_header">Iniciar sesion</button> </a>
-                    <a href="registro.html" button class="button_header">Registrarse</button></a>
-                   </div>
-              
-         </div> 
-</div>
-</header>
-</head>
-
 <body>
+    <header class ="header">
+        <div class="div_header">
+            <div>
+                <a class="header_logo" href="index.html">
+                    <img src="assets/inicio_assets/urhomecuu_logo.jpg"></a>
+                <a href="index.html" class="header_text">Inicio</a>
+                <a href="venta.html" class="header_text">Venta</a>
+                <a href="renta.html" class="header_text">Renta</a>
+            </div>
+            <div class="header_right">
+                <a href="login_registro.html" class="button_header">Iniciar sesión</a>
+                <a href="login_registro.html" class="button_header">Registrarse</a>
+            </div>
+        </div>
+    </header>
     <div class="title-section">
-        <h3>(contador)Casas en venta en Chihuahua</h3>
-        <h4>Propiedades destacadas</h4>
+        <h1>Propiedades a la venta en Chihuahua</h1>
+        <h2>Propiedades destacadas</h2>
     </div>
 
     <div class="main_container">
-        <div class="casa_container">
-            <img src="assets/venta_assets/casa_placeholder.jpg" alt="Casa 1" class="casa-imagen ">
-            <h3>$2,900,000 MXN</h3>
-            <p>130 m²</p>
-            <p>Av Adolfo Lopez Mateos Sur, México, ID: 28198103</p>
+        <div class="casa_container" onclick="location.href='DetallesPropiedad.html?id=28198103'">
+            <img src="assets/venta_assets/casa_placeholder.jpg" alt="Casa 1" class="casa-imagen">
+            <div class="info">
+                <h3>$2,900,000 MXN</h3>
+                <p>130 m²</p>
+                <p>Av Adolfo Lopez Mateos Sur, México, ID: 28198103</p>
+                <i class="far fa-heart" onclick="toggleFavorite(event, '28198103')"></i>
+            </div>
         </div>
-        <div class="casa_container">
-            <img src="assets/venta_assets/casa_placeholder.jpg" alt="Casa 2" class="casa-imagen ">
-            <h3>$3,500,000 MXN</h3>
-            <p>123.64 m²</p>
-            <p>Avenida Tecnologico esquina, México, ID: 28503149</p>
-
+        <div class="casa_container" onclick="location.href='DetallesPropiedad.html?id=28503149'">
+            <img src="assets/venta_assets/casa_placeholder.jpg" alt="Casa 2" class="casa-imagen">
+            <div class="info">
+                <h3>$3,500,000 MXN</h3>
+                <p>123.64 m²</p>
+                <p>Avenida Tecnologico esquina, México, ID: 28503149</p>
+                <i class="far fa-heart" onclick="toggleFavorite(event, '28503149')"></i>
+            </div>
         </div>
-        <div class="casa_container">
-            <img src="assets/venta_assets/casa_placeholder.jpg" alt="Casa 3" class="casa-imagen ">
-            <h3>$14,800,000 MXN</h3>
-            <p>725 m²</p>
-            <p>A, México, ID: 28634909</p>
+        <div class="casa_container" onclick="location.href='DetallesPropiedad.html?id=28634909'">
+            <img src="assets/venta_assets/casa_placeholder.jpg" alt="Casa 3" class="casa-imagen">
+            <div class="info">
+                <h3>$14,800,000 MXN</h3>
+                <p>725 m²</p>
+                <p>A, México, ID: 28634909</p>
+                <i class="far fa-heart" onclick="toggleFavorite(event, '28634909')"></i>
+            </div>
         </div>
-        <div class="casa_container">
-            <img src="assets/venta_assets/casa_placeholder.jpg" alt="Casa 4" class="casa-imagen ">
-            <h3>$25,000,000 MXN</h3>
-            <p>450 m²</p>
-            <p>Manzana 001, México, ID: 28635599</p>        
+        <div class="casa_container" onclick="location.href='DetallesPropiedad.html?id=28635599'">
+            <img src="assets/venta_assets/casa_placeholder.jpg" alt="Casa 4" class="casa-imagen">
+            <div class="info">
+                <h3>$25,000,000 MXN</h3>
+                <p>450 m²</p>
+                <p>Manzana 001, México, ID: 28635599</p>
+                <i class="far fa-heart" onclick="toggleFavorite(event, '28635599')"></i>
+            </div>
         </div>
         
-        <div class="casa_container">
-            <img src="assets/venta_assets/casa_placeholder.jpg" alt="Casa 4" class="casa-imagen ">
-            <h3>$25,000,000 MXN</h3>
-            <p>450 m²</p>
-            <p>Manzana 001, México, ID: 28635599</p>        
-        </div>
-
-        <div class="casa_container">
-            <img src="assets/venta_assets/casa_placeholder.jpg" alt="Casa 4" class="casa-imagen ">
-            <h3>$25,000,000 MXN</h3>
-            <p>450 m²</p>
-            <p>Manzana 001, México, ID: 28635599</p>        
-        </div>
-
-        <div class="casa_container">
-            <img src="assets/venta_assets/casa_placeholder.jpg" alt="Casa 4" class="casa-imagen ">
-            <h3>$25,000,000 MXN</h3>
-            <p>450 m²</p>
-            <p>Manzana 001, México, ID: 28635599</p>        
-        </div>
-
-        <div class="casa_container">
-            <img src="assets/venta_assets/casa_placeholder.jpg" alt="Casa 4" class="casa-imagen ">
-            <h3>$25,000,000 MXN</h3>
-            <p>450 m²</p>
-            <p>Manzana 001, México, ID: 28635599</p>        
-        </div>
-
+        
+         
     </div>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-column">
+                <img class="footer_logo" src="assets/inicio_assets/urhomecuu-nombre.png">
+            </div>
+            <div class="footer-column">
+                <h4>Compañía</h4>
+                <ul>
+                    <li><a href="#">Acerca de</a></li>
+                    <li><a href="#">Contacto</a></li>
+                    <li><a href="#">Política de privacidad</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Contacto</h4>
+                <ul>
+                    <p>Horario de atención 9am a 6pm.</p>
+                    <li><a href="#">urhomecuu@gmail.com</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Redes</h4>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/?hl=es"><img src="assets/inicio_assets/insta-logo.png" alt="Instagram"></a>
+                    <a href="https://www.facebook.com/?locale=es_LA"><img src="assets/inicio_assets/facebook_logo.png" alt="Facebook"></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 UrHomeCUU, Inc. Todos los derechos reservados.</p>
+        </div>
+    </footer>
 </body>
+<script>
+    const favorites = [];
 
-<footer class="footer">
-    <div class="footer-container">
-        <div class="footer-column">
-            <img class ="footer_logo" src="assets/inicio_assets/urhomecuu-nombre.png"></a>
-        </div>
-        <div class="footer-column">
-            <h4>Compañia</h4>
-            <ul>
-                <li><a href="#">Acerca de</a></li>
-                <li><a href="#">Contacto</a></li>
-                <li><a href="#">Politica de privacidad</a></li>
+    function toggleFavorite(event, id) {
+        event.stopPropagation(); // Evita que el clic en el corazón navegue a la página de detalles
+        const heartIcon = event.target;
 
-            </ul>
-        </div>
-        <div class="footer-column">
-            <h4>Contacto</h4>
-            <ul>
-           <p>Horario de atencion 9am a 6pm. </p>                
-           <li><a href="#">urhomecuu@gmail.com</a></li> 
-            </ul>
-        </div>
-        <div class="footer-column">
-            <h4>Redes</h4>
-          <div class="social-icons">
-            <a href="https://www.instagram.com/?hl=es"><img src="assets/inicio_assets/insta-logo.png" alt="Instagram"></a>
-            <a href="https://www.facebook.com/?locale=es_LA"><img src="assets/inicio_assets/facebook_logo.png" alt="Facebook"></a>
-        </div>
-          
-        </div>
-      
-    </div>
-    <div class="footer-bottom">
-        <p>&copy; 2024 UrHomeCUU, Inc. Todos los derechos reservados.</p>
-    </div>
-</footer>
+        if (favorites.includes(id)) {
+            // Si ya es favorito, lo eliminamos
+            favorites.splice(favorites.indexOf(id), 1);
+            heartIcon.classList.remove('fas'); // Cambia a ícono vacío
+            heartIcon.classList.add('far');
+        } else {
+            // Si no es favorito, lo añadimos
+            favorites.push(id);
+            heartIcon.classList.remove('far'); // Cambia a ícono lleno
+            heartIcon.classList.add('fas');
+        }
+    }
+</script>
 
-</html>
 </html>
