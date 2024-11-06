@@ -26,7 +26,7 @@ body {
     top: 10px;
     left: 10px;
     width: 50px; /* Ajusta el tamaño del logo según tus necesidades */
-    height: auto; /* Mantiene la proporción */ /* Mezcla el logo con el fondo */
+    height: auto; /* Mantiene la proporción / / Mezcla el logo con el fondo */
 }
 
 .container-form {
@@ -199,7 +199,6 @@ body {
         border-bottom-left-radius: 0px;
         border-bottom-right-radius: 0;
     }
-
     .form-informacion {
         width: 100%;
         padding: 20px;
