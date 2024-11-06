@@ -1,0 +1,32 @@
+.header {
+    overflow: hidden;
+    background-color: #FAFAFA;
+    padding: 5px 10px;
+    position: fixed;
+    width: 100%;
+    border-style: outset;
+    border-color: white;
+    border-width: 0 1px 1px 1px;
+    height: 50px;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.header_logo {
+    display: flex;
+    height: 65px;
+    width: 65px;
+    margin-right: 20px;
+    float: left;
+    background-color: transparent;
+    mix-blend-mode: multiply;
+}
+
+.header_right {
+    float: left;
+    padding-right: 15px;
+    justify-content:flex-end;
+    align-items:flex-end;
+}
+
