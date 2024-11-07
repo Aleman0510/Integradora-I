@@ -2,42 +2,10 @@
 body {
     font-family: 'Arial', sans-serif;
     background-color: black;
-    color: #fff;
+    color: black;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-}
-
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    background-color: #282828;
-}
-
-.header_logo img {
-    height: 80px; /* Ajusta la altura del logo */
-    background-color: transparent; /* Quita el fondo del logo */
-    mix-blend-mode: multiply; /* Mezcla el logo con el fondo */
-}
-
-.login-btn {
-    padding: 10px 20px;
-    font-size: 16px;
-    background-color: #e9bf8b;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-left: absolute; /* Mueve el botón a la derecha */
-    position: absolute; /* Posiciona en la esquina superior derecha */
-    top: 10px;
-    right: 20px;
-}
-
-.login-btn:hover {
-    background-color: #d4a76b;
 }
 
 .subscription {
@@ -59,7 +27,7 @@ header {
 }
 
 .plan {
-    background-color: #282828;
+    background-color: white;
     padding: 40px;
     border-radius: 10px;
     width: 300px; /* Ancho aumentado */
@@ -74,7 +42,7 @@ header {
 .plan h3 {
     font-size: 24px;
     margin-bottom: 10px;
-    color: #e9bf8b;
+    color: black;
 }
 
 .plan p {
@@ -112,6 +80,6 @@ footer {
     margin-top: auto;
     text-align: center;
     padding: 20px;
-    background-color: #282828;
-    color: #bbb;
+    background-color:white ;
+    color: black;
 }
