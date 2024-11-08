@@ -22,8 +22,16 @@
             <a  href ="/suscripcion.html" class="header_text">Suscripciones</a>
 
           </div>
-                    <div class="header_right">
-                       </div>
+          <div class="header_right">
+            <a href="login_registro.html" button class="button_header" id="loginButton">Iniciar sesion</button> </a>
+            <a href="login_registro.html" button class="button_header" id="registerButton">Registrarse</button></a>
+            
+            <div id="profileContainer" style="display:none;">
+                <a href="/User/user_main.html" target="_blank">
+                <img  id="profileIcon" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4g_2Qj3LsNR-iqUAFm6ut2EQVcaou4u2YXw&s" alt="Perfil" 
+                 href="User/user_main.html"></a>
+            </div>
+           </div>
                   
              </div> 
     </div>
@@ -38,7 +46,7 @@
           <a href="PublicacionesGuardadas.html"><i class="fas fa-bookmark"></i>Propiedades Guardadas</a>
           <a href="AdministrarSuscripcion.html"><i class="fas fa-cog"></i>Administrar Suscripción</a>
           <a href="#"><i class="fas fa-sign-out-alt"></i>Publicar Propiedad</a>
-          <a href="#"><i class="fas fa-sign-out-alt"></i>Cerrar Sesión</a>
+          <a id="logoutButton"><i class="fas fa-sign-out-alt"></i>Cerrar Sesion</a> 
         </div>
     <main class="main-favoritos">
         <br>
@@ -74,7 +82,11 @@
             </div>
             
         </div>
-    </main>
+    </main>    
 </body>
+<script src="/javascript/main.js"></script>
+<script src="/javascript/login_signup.js"></script>
+<script src="javascript/logout.js"></script>
+
 
 </html>

@@ -150,3 +150,7 @@ object-fit: cover;
 .column{
   flex-direction: column;
 }
+
+button{
+  
+}
