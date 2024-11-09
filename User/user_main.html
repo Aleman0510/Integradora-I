@@ -19,9 +19,19 @@
         <a  href="/index.html" class="header_text">Inicio</a>
         <a  href ="/venta.html" class="header_text">Venta</a>
         <a  href ="/renta.html" class="header_text">Renta</a>
+        <a  href ="/suscripcion.html" class="header_text">Suscripciones</a>
+
         </div>
         <div class="header_right">
-        </div>
+          <a href="/login_registro.html" button class="button_header" id="loginButton">Iniciar sesion</button> </a>
+          <a href="/login_registro.html" button class="button_header" id="registerButton">Registrarse</button></a>
+          
+          <div id="profileContainer" style="display:none;">
+              <a href="user_main.html" target="_blank">
+              <img  id="profileIcon" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4g_2Qj3LsNR-iqUAFm6ut2EQVcaou4u2YXw&s" alt="Perfil" 
+               href="user_main.html"></a>
+          </div>
+         </div>
       </div> 
   </header>
 </head>
@@ -33,8 +43,9 @@
           <a href="misPropiedades.html"><i class="fas fa-home"></i>Mis Propiedades</a>
           <a href="PublicacionesGuardadas.html"><i class="fas fa-bookmark"></i>Propiedades Guardadas</a>
           <a href="AdministrarSuscripcion.html"><i class="fas fa-cog"></i>Administrar Suscripción</a>
-          <a href="#"><i class="fas fa-sign-out-alt"></i>Publicar Propiedad</a>
-          <a href="#"><i class="fas fa-sign-out-alt"></i>Cerrar Sesión</a>
+          <a href="#"><i class="fas fa-sign-out-alt"></i>Publicar Propiedad</a> 
+          <a id="logoutButton"><i class="fas fa-sign-out-alt"></i>Cerrar Sesion</a> 
+
         </div>
 
         <div class="container_profile">
@@ -79,5 +90,9 @@
           </div>
       </div>
   </body>
+  <script src="/javascript/main.js"></script>
+  <cript src="/javascript/login_signup.js"></cript>
+  <script src="/javascript/logout.js"></script>
+
   </html>
   

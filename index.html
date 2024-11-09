@@ -18,10 +18,18 @@
             <a  href="index.html" class="header_text">Inicio</a>
             <a  href ="venta.html" class="header_text">Venta</a>
             <a  href ="renta.html" class="header_text">Renta</a>
+            <a  href ="suscripcion.html" class="header_text">Suscripciones</a>
+
           </div>
                     <div class="header_right">
-                        <a href="login_registro.html" button class="button_header">Iniciar sesion</button> </a>
-                        <a href="login_registro.html" button class="button_header">Registrarse</button></a>
+                        <a href="login_registro.html" button class="button_header" id="loginButton">Iniciar sesion</button> </a>
+                        <a href="login_registro.html" button class="button_header" id="registerButton">Registrarse</button></a>
+                        
+                        <div id="profileContainer" style="display:none;">
+                            <a href="/User/user_main.html" target="_blank">
+                            <img  id="profileIcon" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4g_2Qj3LsNR-iqUAFm6ut2EQVcaou4u2YXw&s" alt="Perfil" 
+                             href="User/user_main.html"></a>
+                        </div>
                        </div>
              </div> 
     </div>
@@ -36,15 +44,15 @@
                     <img src="assets/inicio_assets/1.jpg" alt="">
                 </div>
                 <div class="slide">
-                    <h1>ABRIENDO PUERTAS HACIA TU FUTURO<</h1>
+                    <h1>ABRIENDO PUERTAS HACIA TU FUTURO</h1>
                     <img src="assets/inicio_assets/2.jpg" alt="">
                 </div>
                 <div class="slide">
-                    <h1>ABRIENDO PUERTAS HACIA TU FUTURO<</h1>
+                    <h1>ABRIENDO PUERTAS HACIA TU FUTURO</h1>
                     <img src="assets/inicio_assets/3.jpg">
                 </div>
                 <div class="slide">
-                    <h1>ABRIENDO PUERTAS HACIA TU FUTURO<</h1>
+                    <h1>ABRIENDO PUERTAS HACIA TU FUTURO</h1>
                     <img src="assets/inicio_assets/4.jpg" alt="">
                 </div>
             </figure>
@@ -76,7 +84,6 @@
             <h4>Compañia</h4>
             <ul>
                 <li><a href="#">Acerca de</a></li>
-                <li><a href="#">Contacto</a></li>
                 <li><a href="PoliticaPrivacidad.html">Politica de privacidad</a></li>
                 <li><a href="TerminosCondiciones.html">Terminos y condiciones</a></li>
 
@@ -95,14 +102,12 @@
             <a href="https://www.instagram.com/?hl=es"><img src="assets/inicio_assets/insta-logo.png" alt="Instagram"></a>
             <a href="https://www.facebook.com/?locale=es_LA"><img src="assets/inicio_assets/facebook_logo.png" alt="Facebook"></a>
         </div>
-          
         </div>
-      
     </div>
     <div class="footer-bottom">
         <p>&copy; 2024 UrHomeCUU, Inc. Todos los derechos reservados.</p>
     </div>
 </footer>
-
-</html>
+<script src="javascript/main.js"></script>
+<script src="javascript/login_signup.js"></script>
 </html>
