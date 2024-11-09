@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mis Favoritos</title>
-    <link rel="stylesheet" href="../styles/User_styles/favoritos.css">
+    <link rel="stylesheet" href="../styles/User_styles/misPropiedades.css">
     <link rel="stylesheet" href="../styles/main.css">
     <link rel="stylesheet" href="../styles/User_styles/user.css">
 </head>
@@ -33,24 +33,28 @@
 
         <div class="sidebar">
           <a href="user_main.html"><i class="fas fa-user"></i>Mi Cuenta</a>
-          <a href="misPropiedades.html"><i class="fas fa-home"></i>Mis Propiedades</a>
+          <a href="#"><i class="fas fa-home"></i>Mis Propiedades</a>
           <a href="PublicacionesGuardadas.html"><i class="fas fa-bookmark"></i>Propiedades Guardadas</a>
           <a href="AdministrarSuscripcion.html"><i class="fas fa-cog"></i>Administrar Suscripción</a>
           <a href="#"><i class="fas fa-sign-out-alt"></i>Publicar Propiedad</a>
           <a href="#"><i class="fas fa-sign-out-alt"></i>Cerrar Sesión</a>
         </div>
-    <main class="main-favoritos">
+    <main class="main-propiedades">
         <br>
         <br>
         <br>
-        <h1>Mis Favoritos</h1>
-         <div class="favoritos-grid">                              <!--  ¿como hacer dinamica la ruta con el id ? -->
-            <div class="favorito-card"> 
+        <h1>Mis Propiedades</h1>
+         <div class="propiedad-grid">                              <!--  ¿como hacer dinamica la ruta con el id ? -->
+            <div class="propiedad-card"> 
                 <img src="../assets/favoritos_assets/casa.jpg" alt="Propiedad 1">
-                <div class="favorito-details">
+                <div class="propiedad-details">
                     <h3>Propiedad 1</h3>
                     <p>Descripción breve de la propiedad.</p>
-                    <a class="btn-detalles" onclick="location.href='../DetallesPropiedad.html?id=28503149'">Ver detalles</a>
+                    <div class="botones">
+                        <a class="btn-detalles" onclick="location.href='../DetallesPropiedad.html?id=28503149'">Ver detalles</a>
+                    <a href="#" class="btn-editar">Editar </a>
+                    </div>
+                    
                 </div>
             </div>
 

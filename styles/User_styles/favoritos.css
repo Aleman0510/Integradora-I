@@ -27,6 +27,7 @@
   transition: transform 0.7s ease;
   margin-top: 20px;
   height: 220%; /* Altura específica para las publicaciones */
+  cursor: pointer;
 }
 
 .favorito-card:hover {
