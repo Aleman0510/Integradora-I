@@ -16,15 +16,6 @@ btnSignUp.addEventListener("click", e => {
 });
 
 
-
-/*LOGICA DE INICIO DE SESION*/
-// Establece el usuario y la contraseña predeterminados en localStorage (solo si no están ya definidos)
-if (!localStorage.getItem("username") && !localStorage.getItem("password")) {
-    localStorage.setItem("username", "user@gmail.com");
-    localStorage.setItem("password", "123");
-}
-
-// Selecciona el formulario y añade el evento de submit
 document.addEventListener("DOMContentLoaded", function () {
     const inputform= document.getElementById("form_login");
 
