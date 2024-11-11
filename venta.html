@@ -10,79 +10,79 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <header class ="header">
+    <header class="header">
         <div class="div_header">
             <div>
                 <a class="header_logo" href="index.html">
-                    <img src="assets/inicio_assets/urhomecuu_logo.jpg"></a>
+                    <img src="assets/inicio_assets/urhomecuu_logo.jpg" alt="Logo UrHomeCUU">
+                </a>
                 <a href="index.html" class="header_text">Inicio</a>
                 <a href="venta.html" class="header_text">Venta</a>
                 <a href="renta.html" class="header_text">Renta</a>
                 <a href="suscripcion.html" class="header_text">Suscripciones</a>
             </div>
             <div class="header_right">
-                <a href="login_registro.html" button class="button_header" id="loginButton">Iniciar sesion</button> </a>
-                <a href="login_registro.html" button class="button_header" id="registerButton">Registrarse</button></a>
-                
+                <a href="login_registro.html" class="button_header" id="loginButton">Iniciar sesión</a>
+                <a href="login_registro.html" class="button_header" id="registerButton">Registrarse</a>
                 <div id="profileContainer" style="display:none;">
                     <a href="/User/user_main.html" target="_blank">
-                    <img  id="profileIcon" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4g_2Qj3LsNR-iqUAFm6ut2EQVcaou4u2YXw&s" alt="Perfil" 
-                     href="User/user_main.html"></a>
+                    <img id="profileIcon" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4g_2Qj3LsNR-iqUAFm6ut2EQVcaou4u2YXw&s" alt="Perfil">
+                    </a>
                 </div>
-               </div>
+            </div>
         </div>
     </header>
     <div class="title-section">
         <h1>Propiedades a la venta en Chihuahua</h1>
         <h2>Propiedades destacadas</h2>
     </div>
-
-    <div class="main_container">
-        <div class="casa_container" onclick="location.href='DetallesPropiedad.html?id=28198103'">
+    <div class="main_container" id="property-details">
+        <div class="casa_container" onclick="location.href='DetallesPropiedadrenta.html?id=1'">
             <img src="assets/venta_assets/casa_placeholder.jpg" alt="Casa 1" class="casa-imagen">
             <div class="info">
                 <h3>$2,900,000 MXN</h3>
                 <p>130 m²</p>
-                <p>Av Adolfo Lopez Mateos Sur, México, ID: 28198103</p>
-                <i class="far fa-heart" onclick="toggleFavorite(event, '28198103')"></i>
+                <p>Camino Viejo ID:5</p>
+                <i class="far fa-heart" onclick="toggleFavorite(event, '1')"></i>
             </div>
         </div>
-        <div class="casa_container" onclick="location.href='DetallesPropiedad.html?id=28503149'">
+        <div class="casa_container" onclick="location.href='DetallesPropiedadrenta.html?id=2'">
             <img src="assets/venta_assets/casa_placeholder.jpg" alt="Casa 2" class="casa-imagen">
             <div class="info">
                 <h3>$3,500,000 MXN</h3>
                 <p>123.64 m²</p>
-                <p>Avenida Tecnologico esquina, México, ID: 28503149</p>
-                <i class="far fa-heart" onclick="toggleFavorite(event, '28503149')"></i>
+                <p>Calle Lujo, ID: 6</p>
+                <i class="far fa-heart" onclick="toggleFavorite(event, '1')"></i>
             </div>
         </div>
-        <div class="casa_container" onclick="location.href='DetallesPropiedad.html?id=28634909'">
+        <div class="casa_container" onclick="location.href='DetallesPropiedadrenta.html?id=3'">
             <img src="assets/venta_assets/casa_placeholder.jpg" alt="Casa 3" class="casa-imagen">
             <div class="info">
                 <h3>$14,800,000 MXN</h3>
                 <p>725 m²</p>
-                <p>A, México, ID: 28634909</p>
-                <i class="far fa-heart" onclick="toggleFavorite(event, '28634909')"></i>
+                <p>Av. del Mar, ID: 7</p>
+                <i class="far fa-heart" onclick="toggleFavorite(event, '1')"></i>
             </div>
         </div>
-        <div class="casa_container" onclick="location.href='DetallesPropiedad.html?id=28635599'">
+        <div class="casa_container" onclick="location.href='DetallesPropiedadrenta.html?id=4'">
             <img src="assets/venta_assets/casa_placeholder.jpg" alt="Casa 4" class="casa-imagen">
             <div class="info">
                 <h3>$25,000,000 MXN</h3>
                 <p>450 m²</p>
-                <p>Manzana 001, México, ID: 28635599</p>
-                <i class="far fa-heart" onclick="toggleFavorite(event, '28635599')"></i>
+                <p>Av. Empresarial', ID: 8</p>
+                <i class="far fa-heart" onclick="toggleFavorite(event, '1')"></i>
             </div>
         </div>
-        
-        
-         
+    </div>v>
     </div>
 
+
+
+    </div>
     <footer class="footer">
         <div class="footer-container">
             <div class="footer-column">
-                <img class="footer_logo" src="assets/inicio_assets/urhomecuu-nombre.png">
+                <img class="footer_logo" src="assets/inicio_assets/urhomecuu-nombre.png" alt="Logo UrHomeCUU Nombre">
             </div>
             <div class="footer-column">
                 <h4>Compañía</h4>
@@ -95,8 +95,8 @@
             <div class="footer-column">
                 <h4>Contacto</h4>
                 <ul>
-                    <p>Horario de atención 9am a 6pm.</p>
-                    <li><a href="#">urhomecuu@gmail.com</a></li>
+                    <li>Horario de atención 9am a 6pm</li>
+                    <li><a href="mailto:urhomecuu@gmail.com">urhomecuu@gmail.com</a></li>
                 </ul>
             </div>
             <div class="footer-column">
@@ -111,28 +111,6 @@
             <p>&copy; 2024 UrHomeCUU, Inc. Todos los derechos reservados.</p>
         </div>
     </footer>
+    <script src="/Integradora-I/javascript/favoritos.js"></script>
 </body>
-<script>
-    const favorites = [];
-
-    function toggleFavorite(event, id) {
-        event.stopPropagation(); // Evita que el clic en el corazón navegue a la página de detalles
-        const heartIcon = event.target;
-
-        if (favorites.includes(id)) {
-            // Si ya es favorito, lo eliminamos
-            favorites.splice(favorites.indexOf(id), 1);
-            heartIcon.classList.remove('fas'); // Cambia a ícono vacío
-            heartIcon.classList.add('far');
-        } else {
-            // Si no es favorito, lo añadimos
-            favorites.push(id);
-            heartIcon.classList.remove('far'); // Cambia a ícono lleno
-            heartIcon.classList.add('fas');
-        }
-    }
-</script>
-<script src="javascript/main.js"></script>
-
-
 </html>

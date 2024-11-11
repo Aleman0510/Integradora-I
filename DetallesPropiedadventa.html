@@ -38,7 +38,42 @@
     </header>
 
     <div class="main_container" id="property-details">
-        <!-- Detalles de la propiedad se cargarán aquí -->
+        <div class="casa_container" onclick="location.href='DetallesPropiedadventa.html?id=1'">
+            <img src="assets/venta_assets/casa_placeholder.jpg" alt="Casa 1" class="casa-imagen">
+            <div class="info">
+                <h3>$2,900,000 MXN</h3>
+                <p>130 m²</p>
+                <p>Av. Reforma, ID:1</p>
+                <i class="far fa-heart" onclick="toggleFavorite(event, '1')"></i>
+            </div>
+        </div>
+        <div class="casa_container" onclick="location.href='DetallesPropiedadventa.html?id=2'">
+            <img src="assets/venta_assets/casa_placeholder.jpg" alt="Casa 2" class="casa-imagen">
+            <div class="info">
+                <h3>$3,500,000 MXN</h3>
+                <p>123.64 m²</p>
+                <p>Avenida Central, ID: 2</p>
+                <i class="far fa-heart" onclick="toggleFavorite(event, '28503149')"></i>
+            </div>
+        </div>
+        <div class="casa_container" onclick="location.href='DetallesPropiedadventa.html?id=3'">
+            <img src="assets/venta_assets/casa_placeholder.jpg" alt="Casa 3" class="casa-imagen">
+            <div class="info">
+                <h3>$14,800,000 MXN</h3>
+                <p>725 m²</p>
+                <p>Calle Hidalgo, ID: 3</p>
+                <i class="far fa-heart" onclick="toggleFavorite(event, '28634909')"></i>
+            </div>
+        </div>
+        <div class="casa_container" onclick="location.href='DetallesPropiedadventa.html?id=4'">
+            <img src="assets/venta_assets/casa_placeholder.jpg" alt="Casa 4" class="casa-imagen">
+            <div class="info">
+                <h3>$25,000,000 MXN</h3>
+                <p>450 m²</p>
+                <p>Carretera Vieja, ID: 4</p>
+                <i class="far fa-heart" onclick="toggleFavorite(event, '28635599')"></i>
+            </div>
+        </div>
     </div>
 
     <footer class="footer">
@@ -76,35 +111,35 @@
 
     <script>
         const properties = {
-            "28198103": {
-                title: "Casa en Av Adolfo Lopez Mateos",
+            "1": {
+                title: "Casa amplia en zona residencial",
                 price: "$2,900,000 MXN",
                 surface: "130 m²",
                 rooms: 3,
                 bathrooms: 2,
-                description: "Hermosa casa ubicada en una zona exclusiva de la ciudad, cerca de centros comerciales y escuelas. Cuenta con un amplio jardín y acabados de lujo.",
+                description: "Espaciosa casa en una zona residencial tranquila, ideal para familias.",
                 image: "assets/venta_assets/casa_placeholder.jpg"
             },
-            "28503149": {
-                title: "Casa en Avenida Tecnológico",
+            "2": {
+                title: "Terreno ideal para desarrollo urbano",
                 price: "$3,500,000 MXN",
                 surface: "123.64 m²",
                 rooms: 3,
                 bathrooms: 2,
-                description: "Casa moderna con acabados de lujo, ideal para familias.",
+                description: "Terreno amplio en una excelente ubicación para desarrollo urbano",
                 image: "assets/venta_assets/casa_placeholder.jpg"
             },
-            "28634909": {
-                title: "Casa en la Zona Dorada",
+            "3": {
+                title: "Casa amplia",
                 price: "$14,800,000 MXN",
                 surface: "725 m²",
                 rooms: 5,
                 bathrooms: 4,
-                description: "Propiedad exclusiva con amplios espacios y diseño contemporáneo.",
+                description: "Hermosa casa con establo, lago privado y amplio terreno, perfecto para descansar.",
                 image: "assets/venta_assets/casa_placeholder.jpg"
             },
-            "28635599": {
-                title: "Casa en Manzana 001",
+            "4": {
+                title: "Terreno rústico en las afueras",
                 price: "$25,000,000 MXN",
                 surface: "450 m²",
                 rooms: 6,

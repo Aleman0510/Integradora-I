@@ -4,17 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Renta</title>
-    <link rel="stylesheet" href="styles/venta.css">
+    <title>Detalles de la Casa</title>
     <link rel="stylesheet" href="styles/main.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles/detallesPropiedad.css">
 </head>
 <body>
     <header class="header">
         <div class="div_header">
             <div>
                 <a class="header_logo" href="index.html">
-                    <img src="assets/inicio_assets/urhomecuu_logo.jpg" alt="Logo UrHomeCUU">
+                    <img src="assets/inicio_assets/urhomecuu_logo.jpg" alt="Logo UrHomeCuu">
                 </a>
                 <a href="index.html" class="header_text">Inicio</a>
                 <a href="venta.html" class="header_text">Venta</a>
@@ -22,20 +21,22 @@
                 <a href="suscripcion.html" class="header_text">Suscripciones</a>
             </div>
             <div class="header_right">
-                <a href="login_registro.html" class="button_header" id="loginButton">Iniciar sesión</a>
-                <a href="login_registro.html" class="button_header" id="registerButton">Registrarse</a>
+                <a href="login_registro.html" button class="button_header" id="loginButton">Iniciar sesion</button> </a>
+                <a href="login_registro.html" button class="button_header" id="registerButton">Registrarse</button></a>
+                
                 <div id="profileContainer" style="display:none;">
                     <a href="/User/user_main.html" target="_blank">
-                    <img id="profileIcon" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4g_2Qj3LsNR-iqUAFm6ut2EQVcaou4u2YXw&s" alt="Perfil">
-                    </a>
+                    <img  id="profileIcon" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4g_2Qj3LsNR-iqUAFm6ut2EQVcaou4u2YXw&s" alt="Perfil" 
+                     href="User/user_main.html"></a>
                 </div>
+               </div>
+               <div id="bloqueo" class="bloqueo">
+                <p>Debes iniciar sesión para acceder a esta página.</p>
             </div>
+            
         </div>
     </header>
-    <div class="title-section">
-        <h1>Propiedades a la Renta en Chihuahua</h1>
-        <h2>Propiedades destacadas</h2>
-    </div>
+
     <div class="main_container" id="property-details">
         <div class="casa_container" onclick="location.href='DetallesPropiedadrenta.html?id=1'">
             <img src="assets/venta_assets/casa_placeholder.jpg" alt="Casa 1" class="casa-imagen">
@@ -78,7 +79,7 @@
     <footer class="footer">
         <div class="footer-container">
             <div class="footer-column">
-                <img class="footer_logo" src="assets/inicio_assets/urhomecuu-nombre.png" alt="Logo UrHomeCUU Nombre">
+                <img class="footer_logo" src="assets/inicio_assets/urhomecuu-nombre.png">
             </div>
             <div class="footer-column">
                 <h4>Compañía</h4>
@@ -91,8 +92,8 @@
             <div class="footer-column">
                 <h4>Contacto</h4>
                 <ul>
-                    <li>Horario de atención 9am a 6pm</li>
-                    <li><a href="mailto:urhomecuu@gmail.com">urhomecuu@gmail.com</a></li>
+                    <p>Horario de atención 9am a 6pm.</p>
+                    <li><a href="#">urhomecuu@gmail.com</a></li>
                 </ul>
             </div>
             <div class="footer-column">
@@ -107,6 +108,71 @@
             <p>&copy; 2024 UrHomeCUU, Inc. Todos los derechos reservados.</p>
         </div>
     </footer>
-    <script src="/Integradora-I/javascript/favoritos.js"></script>
+
+    <script>
+        const properties = {
+            "1": {
+                title: "Departamento moderno en el centro",
+                price: "$2,900,000 MXN",
+                surface: "130 m²",
+                rooms: 3,
+                bathrooms: 2,
+                description: "Departamento moderno ubicado en el corazón de la ciudad, cerca de todos los servicios.",
+                image: "assets/venta_assets/casa_placeholder.jpg"
+            },
+            "2": {
+                title: "Local comercial en zona de alto tráfico",
+                price: "$3,500,000 MXN",
+                surface: "123.64 m²",
+                rooms: 3,
+                bathrooms: 2,
+                description: "Local comercial en una zona de alto tráfico, perfecto para cualquier tipo de negocio.",
+                image: "assets/venta_assets/casa_placeholder.jpg"
+            },
+            "3": {
+                title: "Penthouse con vista al mar",
+                price: "$14,800,000 MXN",
+                surface: "725 m²",
+                rooms: 5,
+                bathrooms: 4,
+                description: "Penthouse de lujo con vista al mar y acabados de primera, ideal para vivir de vacaciones.",
+                image: "assets/venta_assets/casa_placeholder.jpg"
+            },
+            "4": {
+                title: "Oficina en edificio corporativo",
+                price: "$25,000,000 MXN",
+                surface: "450 m²",
+                rooms: 6,
+                bathrooms: 5,
+                description: "Oficina en edificio corporativo, con todas las comodidades para empresas y negocios.",
+                image: "assets/venta_assets/casa_placeholder.jpg"
+            }
+        };
+
+        const urlParams = new URLSearchParams(window.location.search);
+        const id = urlParams.get('id');
+
+        if (properties[id]) {
+            const property = properties[id];
+            document.getElementById('property-details').innerHTML = `
+                <div class="detalle_container">
+                    <img src="${property.image}" alt="Casa Detalles" class="detalle-imagen">
+                    <div class="detalle_info">
+                        <h1>${property.title}</h1>
+                        <h2>${property.price}</h2>
+                        <p>Superficie: ${property.surface}</p>
+                        <p>Habitaciones: ${property.rooms}</p>
+                        <p>Baños: ${property.bathrooms}</p>
+                        <p>ID: ${id}</p>
+                        <p>Descripción: ${property.description}</p>
+                    </div>
+                </div>
+            `;
+        } else {
+            document.getElementById('property-details').innerHTML = "<p>Propiedad no encontrada.</p>";
+        }
+    </script>
+    <script src="javascript/main.js"></script>
+    <script src="javascript/blockscreen.js"></script>
 </body>
 </html>
