@@ -12,11 +12,12 @@ body {
   border-right: 1px solid #ddd;
   display: flex;
   flex-direction: column;
-  top: 0;
-  bottom: 0;
+  top:0;
+  bottom:0;
   margin-top: 55px;
   padding: 0;
   box-sizing: border-box;
+
 }
 
 .sidebar h2 {
@@ -50,7 +51,8 @@ body {
 
 .sidebar i {
   margin-right: 10px;
-  margin-top: 25px;
+  margin-top:25px;
+
 }
 
 /* Estilo para el contenedor principal */
@@ -60,35 +62,88 @@ body {
   background-color: #fff;
 }
 
-/* CLASES PARA EDITAR PERFIL */
+/* Estilo para el contenedor principal */
+.main-content {
+  flex-grow: 1;
+  padding: 20px;
+  background-color: #fff;
+}
 
+/* Estilo para el contenedor del perfil */
 .container_profile {
   display: flex;
+  flex-direction: column;
+  align-items: center; /* Centra los elementos horizontalmente */
   margin-top: 25px;
 }
 
 .profile-edit {
-  flex: 1;
+  width: 100%;
+  max-width: 800px; /* Tamaño máximo del contenedor */
   padding: 20px;
 }
 
 .profile-edit h2 {
+  text-align: center; /* Centra el texto del encabezado */
   margin-bottom: 20px;
 }
 
+/* Estilo para centrar la imagen y el botón de subir imagen */
+.profile-picture-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.profile-picture img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+input[type="file"] {
+  text-align: center;
+}
+
+/* Estilo para el formulario */
 .profile-edit .form-group {
-  width: 48%;
-  margin-right: 2%;
+  display: flex;
+  flex-direction: column;
   margin-bottom: 20px;
 }
 
+/* Campo "Nombre" que abarca la mitad del contenedor */
 .profile-edit .form-group.full-width {
   width: 100%;
   margin-right: 0;
 }
 
+/* Apellido paterno y materno en la misma línea */
+.form-group.inline {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-group.inline .form-group {
+  width: 48%;
+  margin-bottom: 0;
+}
+
+/* Correo electrónico y número de WhatsApp en la misma línea */
+.form-group.contact {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-group.contact .form-group {
+  width: 48%;
+  margin-bottom: 0;
+}
+
 .profile-edit label {
-  display: block;
   font-weight: bold;
   margin-bottom: 5px;
   color: #333;
@@ -96,7 +151,6 @@ body {
 
 /* Estilo para los datos fijos (span) */
 .profile-edit span {
-  display: block;
   padding: 8px;
   background-color: #f0f0f0;
   border: 1px solid #ddd;
