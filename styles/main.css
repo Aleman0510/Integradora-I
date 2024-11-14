@@ -55,7 +55,7 @@ margin-right: 20px;
   align-items:flex-end;
 }
 .button_header {
-  background-color: #907761;
+  background-color: #7A5F4A;
   border: none;
   color: white;
   padding: 12px 20px;
@@ -97,21 +97,23 @@ margin-right: 20px;
 }
 .italic {
   font-style: italic;
-  color: #7f8c8d;
+  color: #000000;
   margin-bottom: 30px;
 }
 .header_text_left {
   text-align: left;
 }
 .header_text_left h2 {
-  color: #e9bf8b;
+  color: #8B6D5A
+  ;
   margin-bottom: 10px;
 }
 h1{
-color:#614b38;
+color: #5F4535;
+
 }
 .header_text_left p {
-  color: #34495e;
+  color: #000000;
   margin-bottom: 10px;
   font-size: 18px;
   text-justify:center;

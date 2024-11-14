@@ -7,11 +7,17 @@ body {
 .title-section {
   text-align: center;
   margin-bottom: 20px;
+  font-family: Arial, sans-serif;
+
 }
 
 .title-section h1 {
   font-size: 2.5em;
-  color: #333;
+  color: #5F4535;
+}
+
+.title-section h2{
+  color: #8B6D5A;
 }
 
 .main_container {
@@ -27,6 +33,7 @@ body {
   border-radius: 15px;
   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s, box-shadow 0.3s;
+  font-family: Arial, sans-serif;  
 }
 
 .casa_container:hover {
@@ -48,7 +55,7 @@ body {
 }
 
 .info h3 {
-  color: #e9bf8b;
+  color: #8B6D5A;
   font-size: 1.5em;
 }
 
@@ -70,3 +77,4 @@ body {
 .fa-heart.far {
   color: #ccc; /* Corazón vacío */
 }
+
