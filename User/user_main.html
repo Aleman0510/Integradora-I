@@ -20,9 +20,15 @@
         <a href="../suscripcion.html" class="header_text">Suscripciones</a>
       </div>
       <div class="header_right">
-        <a href="../login_registro.html" class="button_header" id="loginButton">Iniciar sesión</a>
-        <a href="../login_registro.html" class="button_header" id="registerButton">Registrarse</a>
-      </div>
+        <a href="login_registro.html" button class="button_header" id="loginButton">Iniciar sesion</button> </a>
+        <a href="login_registro.html" button class="button_header" id="registerButton">Registrarse</button></a>
+        
+        <div id="profileContainer" style="display:none;">
+            <a href="/User/user_main.html" target="_blank">
+            <img  id="profileIcon" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4g_2Qj3LsNR-iqUAFm6ut2EQVcaou4u2YXw&s" alt="Perfil" 
+             href="User/user_main.html"></a>
+        </div>
+       </div>
     </div> 
   </header>
 
@@ -77,10 +83,12 @@
     </div>
   </div>
   
-  <script src="../javascript/main.js"></script>
-  <script src="../javascript/login_signup.js"></script>
-  <script src="../javascript/logout.js"></script>
 </body>
+
+<script src="/javascript/main.js"></script>
+<script src="/javascript/login_signup.js"></script>
+<script src="/javascript/logout.js"></script>
+
 <script>
 // Función para obtener los datos del usuario logueado
 async function fetchUserData(userId) {
