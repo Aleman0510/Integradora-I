@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
             // Elimina el estado de sesión almacenado en localStorage
             localStorage.removeItem("isLoggedIn");
             alert("Has cerrado sesión con éxito");
-            window.location.href = "/login_registro.html"; // Redirige a la página de inicio de sesión
+            window.location.href = "/Integradora-I/login_registro.html"; // Redirige a la página de inicio de sesión
         });
     }
 });

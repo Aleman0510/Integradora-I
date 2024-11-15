@@ -4,96 +4,125 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Perfil del Usuario</title>
     <link rel="stylesheet" href="../styles/main.css">
     <link rel="stylesheet" href="../styles/User_styles/user.css">
 </head>
-
-
-<head>
-  <header class ="header">
+<body>
+  <header class="header">
     <div class="div_header">   
       <div>
         <a class="header_logo" href="/index.html">
-        <img src="/assets/inicio_assets/urhomecuu_logo.jpg"></a>
-        <a  href="/index.html" class="header_text">Inicio</a>
-        <a  href ="/venta.html" class="header_text">Venta</a>
-        <a  href ="/renta.html" class="header_text">Renta</a>
-        <a  href ="/suscripcion.html" class="header_text">Suscripciones</a>
-
-        </div>
-        <div class="header_right">
-          <a href="/login_registro.html" button class="button_header" id="loginButton">Iniciar sesion</button> </a>
-          <a href="/login_registro.html" button class="button_header" id="registerButton">Registrarse</button></a>
-          
-          <div id="profileContainer" style="display:none;">
-              <a href="user_main.html" target="_blank">
-              <img  id="profileIcon" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4g_2Qj3LsNR-iqUAFm6ut2EQVcaou4u2YXw&s" alt="Perfil" 
-               href="user_main.html"></a>
-          </div>
-         </div>
-      </div> 
-  </header>
-</head>
-       
-
-      <body>
-        <div class="sidebar">
-          <a href="user_main.html"><i class="fas fa-user"></i>Mi Cuenta</a>
-          <a href="misPropiedades.html"><i class="fas fa-home"></i>Mis Propiedades</a>
-          <a href="PublicacionesGuardadas.html"><i class="fas fa-bookmark"></i>Propiedades Guardadas</a>
-          <a href="AdministrarSuscripcion.html"><i class="fas fa-cog"></i>Administrar Suscripción</a>
-          <a href="PublicarPropiedad.html"><i class="fas fa-sign-out-alt"></i>Publicar Propiedad</a> 
-          <a id="logoutButton"><i class="fas fa-sign-out-alt"></i>Cerrar Sesion</a> 
-
-        </div>
-
-        <div class="container_profile">
-          <div class="profile-edit">
-            
-            <h2>Editar perfil</h2>
-            <div class="profile-picture-container">
-              <div class="profile-picture">
-                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHd0-_MJlhOit1G7gec5K9ti4h_8PeMqVSxw&s" alt="Imagen de Perfil">
-              </div>
-              <input type="file" id="profile-pic" accept="image/*">
-          </div>
-          <div class="profile-edit">
-            <h2>Información del Perfil</h2>
-            <div class="form-group full-width">
-                <label for="nombre">Nombre(s)</label>
-                <span id="nombre">Juan</span>
-            </div>
-            <div class="form-group">
-                <label for="apellidop">Apellido paterno</label>
-                <span id="apellidop">Pérez</span>
-            </div>
-            <div class="form-group">
-                <label for="apellidom">Apellido materno</label>
-                <span id="apellidom">García</span>
-            </div>
-            <div class="form-group full-width">
-                <label for="email-contacto">Correo electrónico</label>
-                <span id="email-contacto">juan.perez@example.com</span>
-            </div>
-            <div class="form-group">
-                <label for="whatsapp">Número de WhatsApp</label>
-                <span id="whatsapp">+52 123 456 7890</span>
-            </div>
-            <div class="form-group full-width">
-                <label for="tipo-usuario">Tipo de usuario</label>
-                <span id="tipo-usuario">Propietario (1 propiedad)</span>
-            </div>
-        </div>
-        
-              
-          </div>
+        <img src="/assets/inicio_assets/urhomecuu_logo.jpg" alt="Logo"></a>
+        <a href="../index.html" class="header_text">Inicio</a>
+        <a href="../venta.html" class="header_text">Venta</a>
+        <a href="../renta.html" class="header_text">Renta</a>
+        <a href="../suscripcion.html" class="header_text">Suscripciones</a>
       </div>
-  </body>
-  <script src="/javascript/main.js"></script>
-  <cript src="/javascript/login_signup.js"></cript>
-  <script src="/javascript/logout.js"></script>
-  sc
+      <div class="header_right">
+        <a href="../login_registro.html" class="button_header" id="loginButton">Iniciar sesión</a>
+        <a href="../login_registro.html" class="button_header" id="registerButton">Registrarse</a>
+      </div>
+    </div> 
+  </header>
 
-  </html>
+  <div class="sidebar">
+    <a href="user_main.html"><i class="fas fa-user"></i>Mi Cuenta</a>
+    <a href="misPropiedades.html"><i class="fas fa-home"></i>Mis Propiedades</a>
+    <a href="PublicacionesGuardadas.html"><i class="fas fa-bookmark"></i>Propiedades Guardadas</a>
+    <a href="AdministrarSuscripcion.html"><i class="fas fa-cog"></i>Administrar Suscripción</a>
+    <a href="PublicarPropiedad.html"><i class="fas fa-sign-out-alt"></i>Publicar Propiedad</a> 
+    <a id="logoutButton"><i class="fas fa-sign-out-alt"></i>Cerrar Sesión</a> 
+  </div>
+
+  <div class="container_profile">
+    <div class="profile-edit">
+      <h2>Editar perfil</h2>
+      <div class="profile-picture-container">
+        <div class="profile-picture">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHd0-_MJlhOit1G7gec5K9ti4h_8PeMqVSxw&s" alt="Imagen de Perfil">
+        </div>
+        <input type="file" id="profile-pic" accept="image/*">
+      </div>
+      
+      <h2>Información del Perfil</h2>
+      <div class="form-group full-width">
+        <label for="nombre">Nombre(s)</label>
+        <span id="nombre">Juan</span>
+      </div>
+      <div class="form-row">
+        <div class="form-group half-width">
+          <label for="apellidop">Apellido paterno</label>
+          <span id="apellidop">Pérez</span>
+        </div>
+        <div class="form-group half-width">
+          <label for="apellidom">Apellido materno</label>
+          <span id="apellidom">García</span>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group half-width">
+          <label for="email-contacto">Correo electrónico</label>
+          <span id="email-contacto">juan.perez@example.com</span>
+        </div>
+        <div class="form-group half-width">
+          <label for="whatsapp">Número de WhatsApp</label>
+          <span id="whatsapp">+52 123 456 7890</span>
+        </div>
+      </div>
+      <div class="form-group full-width">
+        <label for="tipo-usuario">Tipo de usuario</label>
+        <span id="tipo-usuario">Propietario (1 propiedad)</span>
+      </div>
+    </div>
+  </div>
+  
+  <script src="../javascript/main.js"></script>
+  <script src="../javascript/login_signup.js"></script>
+  <script src="../javascript/logout.js"></script>
+</body>
+<script>
+// Función para obtener los datos del usuario logueado
+async function fetchUserData() {
+    const userId = localStorage.getItem("userId"); // Recupera el userId desde el almacenamiento local
+
+    if (!userId) {
+        console.error("No se encontró el ID del usuario. Asegúrate de que el usuario haya iniciado sesión.");
+        return;
+    }
+
+    try {
+        const response = await fetch(`http://127.0.0.1:5500/usuarios/${userId}`);
+
+        if (!response.ok) {
+            throw new Error("Error al obtener los datos del usuario");
+        }
+
+        const data = await response.json();
+        if (data.length > 0) {
+            const user = data[0]; // Asumiendo que el resultado es un array con un único objeto
+
+            // Insertar los datos del usuario en los elementos correspondientes
+            document.getElementById("nombre").textContent = user.nombre_usuario;
+            document.getElementById("apellidop").textContent = user.apellidoP_usuario;
+            document.getElementById("apellidom").textContent = user.apellidoM_usuario;
+            document.getElementById("email-contacto").textContent = user.email_usuario;
+            document.getElementById("whatsapp").textContent = user.telefono_usuario;
+            document.getElementById("tipo-usuario").textContent = user.tipo_usuario; // Reemplaza con el campo adecuado
+        }
+    } catch (error) {
+        console.error(error);
+        alert("No se pudo cargar la información del perfil.");
+    }
+}
+
+// Llama a la función para obtener y mostrar los datos del usuario
+fetchUserData();
+
+</script>
+
+</html>
+
+
+
   

@@ -59,7 +59,7 @@
   .btn-renew {
     display: block;
     width: 100%;
-    background-color: #aea9a4;
+    background-color: #7A5F4A;
     color: #ffffff;
     border: none;
     padding: 10px 0;
@@ -73,6 +73,6 @@
   }
   
   .btn-renew:hover {
-    background-color: #907761;
+    background-color: #e9bf8b;
   }
   
