@@ -42,6 +42,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 if (usuarioEncontrado) {
                     alert("Inicio de sesión exitoso");
                     localStorage.setItem("isLoggedIn", "true"); // Guarda el estado de sesión
+                    localStorage.setItem("userId", usuarioEncontrado.id_usuario); // Guarda el userId del usuario autenticado
                     window.location.href = "index.html"; // Redirige a la página principal
                 } else {
                     alert("Nombre de usuario o contraseña incorrectos");
