@@ -42,6 +42,7 @@
                     <label for="">
                         <i class='bx bx-envelope' ></i>
                         <input type="email" placeholder="Correo Electrónico">
+                        <input type="number" placeholder="Edad" min="18" required>
                     </label>
                     <label for=""> 
                         <i class='bx bx-phone' ></i> 
@@ -50,6 +51,12 @@
                     <label for="">
                         <i class='bx bx-lock-alt' ></i>
                         <input type="password" placeholder="Contraseña">
+                    </label>
+                    <label for="imagenes">Subir INE (Frontal)
+                    <input type="file" id="imagenes" name="imagenes" accept="image/*" multiple required>
+                   </label>
+                    <label for="imagenes">Subir INE (Reverso)
+                    <input type="file" id="imagenes" name="imagenes" accept="image/*" multiple required>
                     </label>
                     <input type="submit" value="Registrarse">
                 </form>
