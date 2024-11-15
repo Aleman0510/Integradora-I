@@ -51,9 +51,10 @@ body {
 }
 
 .plan ul {
-    list-style: none;
+    list-style: circle ;
     padding: 0; /* Quita el margen superior */
     margin-bottom: 20px;
+    text-align: left;
 }
 
 .plan ul li {

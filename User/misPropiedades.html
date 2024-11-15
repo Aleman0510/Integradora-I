@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mis Favoritos</title>
-    <link rel="stylesheet" href="../styles/User_styles/misPropiedades.css">
-    <link rel="stylesheet" href="../styles/main.css">
-    <link rel="stylesheet" href="../styles/User_styles/user.css">
+    <link rel="stylesheet" href="/styles/User_styles/misPropiedades.css">
+    <link rel="stylesheet" href="/styles/main.css">
+    <link rel="stylesheet" href="/styles/User_styles/user.css">
 </head>
 
 <head>
@@ -16,15 +16,21 @@
           <div>
             <a class="header_logo" href="index.html">
                 <img src="../assets/inicio_assets/urhomecuu_logo.jpg"></a>
-            <a  href="../index.html" class="header_text">Inicio</a>
-            <a  href ="../venta.html" class="header_text">Venta</a>
-            <a  href ="../renta.html" class="header_text">Renta</a>
-            <a  href ="../contacto.html" class="header_text">Contactanos</a>
+            <a  href="/index.html" class="header_text">Inicio</a>
+            <a  href ="/venta.html" class="header_text">Venta</a>
+            <a  href ="/renta.html" class="header_text">Renta</a>
+            <a  href ="/contacto.html" class="header_text">Contactanos</a>
           </div>
-                    <div class="header_right">
-                       </div>
-                  
-             </div> 
+          <div class="header_right">
+            <a href="login_registro.html" button class="button_header" id="loginButton">Iniciar sesion</button> </a>
+            <a href="login_registro.html" button class="button_header" id="registerButton">Registrarse</button></a>
+            
+            <div id="profileContainer" style="display:none;">
+                <a href="/User/user_main.html" target="_blank">
+                <img  id="profileIcon" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4g_2Qj3LsNR-iqUAFm6ut2EQVcaou4u2YXw&s" alt="Perfil" 
+                 href="User/user_main.html"></a>
+            </div>
+           </div>
     </div>
     </header>
 </head>
@@ -68,6 +74,10 @@
     <!-- Footer -->
     
 </body>
-<SCRipt src="favoritos.js"></SCRipt>
+<script src="/javascript/favoritos.js"></script>
+<script src="/javascript/logout.js"></script>
+<script src="/javascript/main.js"></script>
+
+
 
 </html>
