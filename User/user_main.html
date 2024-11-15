@@ -83,13 +83,21 @@
 </body>
 <script>
 // Función para obtener los datos del usuario logueado
-async function fetchUserData(userId) {
+async function fetchUserData() {
+    const userId = localStorage.getItem("userId"); // Recupera el userId desde el almacenamiento local
+
+    if (!userId) {
+        console.error("No se encontró el ID del usuario. Asegúrate de que el usuario haya iniciado sesión.");
+        return;
+    }
+
     try {
-      const response = await fetch(`http://127.0.0.1:5500/usuarios/${userId}`);
+        const response = await fetch(`http://127.0.0.1:5500/usuarios/${userId}`);
 
         if (!response.ok) {
             throw new Error("Error al obtener los datos del usuario");
         }
+
         const data = await response.json();
         if (data.length > 0) {
             const user = data[0]; // Asumiendo que el resultado es un array con un único objeto
@@ -108,10 +116,8 @@ async function fetchUserData(userId) {
     }
 }
 
-// Llamada a la función con el ID del usuario
-// Puedes obtener el userId desde el almacenamiento local o la sesión si es necesario
-const userId = 1; // Reemplaza este ID con el del usuario logueado
-fetchUserData(userId);
+// Llama a la función para obtener y mostrar los datos del usuario
+fetchUserData();
 
 </script>
 
