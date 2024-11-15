@@ -77,14 +77,14 @@
   .btn-editar {
     display: inline-block;
     padding: 10px 15px;
-    background-color: #907761;
+    background-color: #7A5F4A;
     color: white;
     text-decoration: none;
     border-radius: 5px;
   }
 
   .btn-editar:hover {
-    background-color: #005a8c;
+    background-color: #e9bf8b;
   }
 
   .footer {
