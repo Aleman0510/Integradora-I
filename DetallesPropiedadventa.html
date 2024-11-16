@@ -109,70 +109,10 @@
         </div>
     </footer>
 
-    <script>
-        const properties = {
-            "1": {
-                title: "Casa amplia en zona residencial",
-                price: "$2,900,000 MXN",
-                surface: "130 m²",
-                rooms: 3,
-                bathrooms: 2,
-                description: "Espaciosa casa en una zona residencial tranquila, ideal para familias.",
-                image: "assets/venta_assets/casa_placeholder.jpg"
-            },
-            "2": {
-                title: "Terreno ideal para desarrollo urbano",
-                price: "$3,500,000 MXN",
-                surface: "123.64 m²",
-                rooms: 3,
-                bathrooms: 2,
-                description: "Terreno amplio en una excelente ubicación para desarrollo urbano",
-                image: "assets/venta_assets/casa_placeholder.jpg"
-            },
-            "3": {
-                title: "Casa amplia",
-                price: "$14,800,000 MXN",
-                surface: "725 m²",
-                rooms: 5,
-                bathrooms: 4,
-                description: "Hermosa casa con establo, lago privado y amplio terreno, perfecto para descansar.",
-                image: "assets/venta_assets/casa_placeholder.jpg"
-            },
-            "4": {
-                title: "Terreno rústico en las afueras",
-                price: "$25,000,000 MXN",
-                surface: "450 m²",
-                rooms: 6,
-                bathrooms: 5,
-                description: "Magnífica propiedad con instalaciones de lujo y jardín amplio.",
-                image: "assets/venta_assets/casa_placeholder.jpg"
-            }
-        };
-
-        const urlParams = new URLSearchParams(window.location.search);
-        const id = urlParams.get('id');
-
-        if (properties[id]) {
-            const property = properties[id];
-            document.getElementById('property-details').innerHTML = `
-                <div class="detalle_container">
-                    <img src="${property.image}" alt="Casa Detalles" class="detalle-imagen">
-                    <div class="detalle_info">
-                        <h1>${property.title}</h1>
-                        <h2>${property.price}</h2>
-                        <p>Superficie: ${property.surface}</p>
-                        <p>Habitaciones: ${property.rooms}</p>
-                        <p>Baños: ${property.bathrooms}</p>
-                        <p>ID: ${id}</p>
-                        <p>Descripción: ${property.description}</p>
-                    </div>
-                </div>
-            `;
-        } else {
-            document.getElementById('property-details').innerHTML = "<p>Propiedad no encontrada.</p>";
-        }
-    </script>
+    
     <script src="javascript/main.js"></script>
     <script src="javascript/blockscreen.js"></script>
+    <script src="javascript/fetch/fetch_getventa_id.js"></script>
+      
 </body>
 </html>

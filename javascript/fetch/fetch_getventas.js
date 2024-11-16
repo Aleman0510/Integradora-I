@@ -35,8 +35,9 @@ async function cargarPublicaciones() {
 
       // Configurar el comportamiento al hacer clic (redirigir a detalles de la propiedad)
       casaContainer.onclick = () => {
-        window.location.href = `DetallesPropiedadrenta.html?id=${publicacion.id_publicacion_venta}`;
+        window.location.href = `DetallesPropiedadventa.html?id=${publicacion.id_publicacion_venta}`;
       };
+      
 
       // Agregar el contenedor al DOM
       mainContainer.appendChild(casaContainer);
