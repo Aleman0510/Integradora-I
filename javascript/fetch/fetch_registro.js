@@ -25,7 +25,7 @@ document.querySelector(".form").addEventListener("submit", function (event) {
   formData.append("check_usuario2", check_usuario2); 
 
   // Realiza el fetch para enviar los datos al backend
-  fetch("http://localhost:5500/usuarios", { 
+  fetch("http://localhost:5500/usuario", { 
     method: "POST",
     body: formData
   })
