@@ -34,13 +34,13 @@ body {
 }
 
 .detalle_info h1 {
-    color: #333;
+    color: #000000;
     font-size: 2em;
     margin-bottom: 10px;
 }
 
 .detalle_info h2 {
-    color: #e9bf8b;
+    color: #5F4535;
     font-size: 1.8em;
     margin-bottom: 20px;
 }
