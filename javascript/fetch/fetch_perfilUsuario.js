@@ -8,7 +8,7 @@ async function fetchUserData() {
     }
 
     try {
-        const response = await fetch(`http://127.0.0.1:5500/usuarios/${userId}`);
+        const response = await fetch(`http://localhost:5500/usuarios/${userId}`);
 
         if (!response.ok) {
             throw new Error("Error al obtener los datos del usuario");
@@ -23,8 +23,7 @@ async function fetchUserData() {
             document.getElementById("apellidop").textContent = user.apellidoP_usuario;
             document.getElementById("apellidom").textContent = user.apellidoM_usuario;
             document.getElementById("email-contacto").textContent = user.email_usuario;
-            document.getElementById("whatsapp").textContent = user.telefono_usuario;
-            document.getElementById("tipo-usuario").textContent = user.tipo_usuario; // Reemplaza con el campo adecuado
+            document.getElementById("whatsapp").textContent = user.telefono_usuario; // Reemplaza con el campo adecuado
         }
     } catch (error) {
         console.error(error);
@@ -34,3 +33,4 @@ async function fetchUserData() {
 
 // Llama a la función para obtener y mostrar los datos del usuario
 fetchUserData();
+
