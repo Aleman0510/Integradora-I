@@ -11,8 +11,8 @@ body {
   border-right: 1px solid #ddd;
   display: flex;
   flex-direction: column;
-  top:0;
-  bottom:0;
+  top: 0;
+  bottom: 0;
   margin-top: 55px;
   padding: 0;
   margin-right: 15px;
@@ -44,24 +44,24 @@ body {
 
 .sidebar i {
   margin-right: 10px;
-  margin-top:25px;
+  margin-top: 25px;
 }
 
 .container_profile {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 25px;
+  margin-top: 35px;
+  width: calc(100% - 300px);
 }
 
 .profile-edit {
   width: 100%;
-  max-width: 800px;
+  max-width: 900px; /* Ajusta el ancho máximo */
   padding: 20px;
 }
 
 .profile-edit h2 {
-  text-align: center;
   margin-bottom: 20px;
 }
 
@@ -70,62 +70,6 @@ body {
   flex-direction: column;
   align-items: center;
   margin-bottom: 20px;
-}
-
-.profile-picture img {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  object-fit: cover;
-  margin-bottom: 10px;
-}
-
-input[type="file"] {
-  text-align: center;
-}
-
-.form-group {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 20px;
-}
-
-.form-row {
-  display: flex;
-  justify-content: space-between;
-}
-
-.half-width {
-  width: 48%;
-}
-
-.full-width {
-  width: 100%;
-}
-
-.profile-edit label {
-  font-weight: bold;
-  margin-bottom: 5px;
-  color: #333;
-}
-
-.profile-edit span {
-  padding: 8px;
-  background-color: #f0f0f0;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  color: #555;
-  font-size: 15px;
-  box-sizing: border-box;
-}
-
-.profile-picture-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 20px;
-  width: 100%;
-  margin-right: 0;
 }
 
 .profile-picture {
@@ -143,4 +87,56 @@ input[type="file"] {
   object-fit: cover;
 }
 
+input[type="file"] {
+  text-align: center;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.form-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px; /* Espacio entre los campos */
+}
+
+.half-width {
+  flex: 1; /* Ambos campos toman el mismo ancho */
+}
+
+.full-width {
+  width: 100%;
+}
+
+.profile-edit label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.profile-edit span {
+  display: block;
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  color: #000000;
+  font-size: 15px;
+  box-sizing: border-box;
+}
+
+/* Ajustes para asegurar que los campos ocupen todo el espacio disponible */
+.form-row .form-group {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+/* Asegura que los campos estén alineados correctamente */
+.form-row .half-width {
+  width: calc(50% - 10px); /* Mantiene el espacio proporcional */
+}
 
