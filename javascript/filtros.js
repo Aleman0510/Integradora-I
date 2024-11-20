@@ -26,3 +26,5 @@ function aplicarFiltros() {
         listaPropiedades.appendChild(propiedad);
     });
 }
+
+document.getElementById('ordenar').addEventListener('change', aplicarFiltros);

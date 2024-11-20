@@ -8,21 +8,25 @@ body {
   text-align: center;
   margin-bottom: 20px;
   font-family: Arial, sans-serif;
-
 }
 
 .title-section h1 {
   font-size: 2.5em;
-  color: #4B3629;
+  color: #5F4535;
 }
 
-.title-section h2{
-  color: #5F4535;
+.title-section h2 {
+  color: #8B6D5A;
+}
+
+.filter-container {
+  text-align: center;
+  margin: 20px 0;
 }
 
 .main_container {
   display: grid;
-  grid-template-columns: repeat(4, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 20px;
   padding: 40px;
 }
@@ -55,12 +59,12 @@ body {
 }
 
 .info h3 {
-  color: #5F4535;
+  color: #8B6D5A;
   font-size: 1.5em;
 }
 
 .info p {
-  color: #000000;
+  color: #555;
   margin: 10px 0;
 }
 
@@ -77,4 +81,3 @@ body {
 .fa-heart.far {
   color: #ccc; /* Corazón vacío */
 }
-

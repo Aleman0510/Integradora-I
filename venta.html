@@ -39,6 +39,15 @@
         <h1>Propiedades a la venta en Chihuahua</h1>
         <h2>Propiedades destacadas</h2>
     </div>
+    <div class="filter-container">
+        <select id="ordenar">
+            <option value="mayor-precio">Mayor precio</option>
+            <option value="menor-precio">Menor precio</option>
+            <option value="recientes">Más recientes</option>
+            <option value="antiguos">Más antiguos</option>
+        </select>
+        <button onclick="aplicarFiltros()">Aplicar</button>
+    </div>
     <div class="main_container" id="property-details">
         <div class="casa_container" onclick="location.href='DetallesPropiedadrenta.html?id=1'">
             <img src="assets/venta_assets/casa_placeholder.jpg" alt="Casa 1" class="casa-imagen">
