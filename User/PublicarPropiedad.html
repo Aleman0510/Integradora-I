@@ -9,7 +9,6 @@
 </head>
 <header class="header">
     <div class="div_header">
-        
       <div>
         <a class="header_logo" href="/index.html">
             <img src="/assets/inicio_assets/urhomecuu_logo.jpg"></a>
@@ -19,21 +18,20 @@
         <a href="/suscripcion.html" class="header_text">Suscripciones</a>
       </div>
       <div class="header_right">
-        <a href="/login_registro.html" button class="button_header" id="loginButton">Iniciar sesion</button> </a>
+        <a href="/login_registro.html" button class="button_header" id="loginButton">Iniciar sesión</button> </a>
         <a href="/login_registro.html" button class="button_header" id="registerButton">Registrarse</button></a>
-        
         <div id="profileContainer" style="display:none;">
             <a href="/User/user_main.html" target="_blank">
-            <img  id="profileIcon" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4g_2Qj3LsNR-iqUAFm6ut2EQVcaou4u2YXw&s" alt="Perfil" 
+            <img id="profileIcon" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4g_2Qj3LsNR-iqUAFm6ut2EQVcaou4u2YXw&s" alt="Perfil" 
              href="User/user_main.html"></a>
         </div>
        </div>
-
     </div> 
 </header>
 <body>
     <div class="form-container">
         <form id="publicar-form">
+            <!-- Primera sección del formulario -->
             <div class="form-section" id="section-1">
                 <h2>Detalles de la Propiedad</h2>
     
@@ -47,7 +45,7 @@
                 <input type="file" id="imagenes" name="imagenes" accept="image/*" multiple required>
 
                 <div class="tipo-inmueble">
-                    <label for="Tipo De Propiedad">Tipo De Propiedad:</label>
+                    <label for="tipo-inmueble">Tipo De Propiedad:</label>
                     <label class="tipo-label">
                         <input type="radio" name="tipo-inmueble" value="Casa">
                         <span class="custom-radio"></span> Casa
@@ -66,65 +64,80 @@
                     </label>
                 </div>
 
-                <button type="button" onclick="showNextSection(2)">Siguiente</button>
+                <button type="button" onclick="showNextSection()">Siguiente</button>
             </div>
 
+            <!-- Segunda sección del formulario -->
             <div class="form-section" id="section-2" style="display: none;">
                 <h2>Más Detalles</h2>
                  
-                <label for="Precio Inmueble">Precio Inmueble:</label>
-                <textarea id="Precio Inmueble" name="Precio Inmueble" placeholder="$1000000" required></textarea>
+                <label for="precio">Precio Inmueble:</label>
+                <input type="number" id="precio" name="precio" placeholder="$1000000" required>
                 
-                <label for="Calle">Calle y Num. Exterior:</label>
-                <textarea id="Calle" name="Calle" placeholder="Ej. Avenida Albedo #5906" required></textarea>
+                <label for="calle">Calle y Num. Exterior:</label>
+                <input type="text" id="calle" name="calle" placeholder="Ej. Avenida Albedo #5906" required>
 
-                <label for="Colonia">Colonia:</label>
-                <textarea id="Colonia" name="Colonia" placeholder="Colonia" required></textarea>
+                <label for="colonia">Colonia:</label>
+                <input type="text" id="colonia" name="colonia" placeholder="Colonia" required>
 
-                <label for="Cp">Código Postal:</label>
-                <input type="number" id="Cp" name="Codigo Postal" min="0" required>
-                 
-                <label for="Habitaciones">Habitaciones:</label>
-                <input type="number" id="Habitaciones" name="Habitaciones" min="0" required>
+                <label for="cp">Código Postal:</label>
+                <input type="number" id="cp" name="cp" placeholder="Código Postal" min="0" required>
+
+                <label for="terreno">Tamaño del Terreno (m²):</label>
+                <input type="number" id="terreno" name="terreno" placeholder="Ej. 250.50" step="0.01" required>
+                
+                <label for="habitaciones">Habitaciones:</label>
+                <input type="number" id="habitaciones" name="habitaciones" min="0" required>
                 
                 <label for="banos">Número de Baños:</label>
                 <input type="number" id="banos" name="banos" min="0" required>
 
-                <label for="Pisos">Pisos:</label>
-                <input type="number" id="Pisos" name="Pisos" min="0" required>
+                <label for="pisos">Pisos:</label>
+                <input type="number" id="pisos" name="pisos" min="0" required>
 
                 <div class="Garage">
-                    <label for="Garage">Garage:</label>
+                    <label for="garage">Garage:</label>
                     <label class="tipo-label">
-                        <input type="radio" name="garage" value="Si">
+                        <input type="radio" name="garage" value="true">
                         <span class="custom-radio"></span> Sí
                     </label>
                     <label class="tipo-label">
-                        <input type="radio" name="garage" value="No">
+                        <input type="radio" name="garage" value="false">
                         <span class="custom-radio"></span> No
                     </label>
                 </div>
 
-                <button type="button" onclick="showPreviousSection(1)">Anterior</button>
+                <div class="Amueblado">
+                    <label for="amueblado">Amueblado:</label>
+                    <label class="tipo-label">
+                        <input type="radio" name="amueblado" value="true">
+                        <span class="custom-radio"></span> Sí
+                    </label>
+                    <label class="tipo-label">
+                        <input type="radio" name="amueblado" value="false">
+                        <span class="custom-radio"></span> No
+                    </label>
+                </div>
+
+                <button type="button" onclick="showPreviousSection()">Anterior</button>
                 <button type="submit">Publicar</button>
             </div>
         </form>
     </div>
+
     <script>
-        function showNextSection(sectionNumber) {
+        function showNextSection() {
             document.getElementById('section-1').style.display = 'none';
             document.getElementById('section-2').style.display = 'block';
         }
 
-        function showPreviousSection(sectionNumber) {
+        function showPreviousSection() {
             document.getElementById('section-2').style.display = 'none';
             document.getElementById('section-1').style.display = 'block';
         }
     </script>
 </body>
-
 <script src="/javascript/login_signup.js"></script>
 <script src="/javascript/main.js"></script>
-
+<script src="/javascript/fetch/fetch_publicacionV.js"></script>
 </html>
-
