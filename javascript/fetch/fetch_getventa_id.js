@@ -38,7 +38,7 @@ async function cargarDetallePublicacion() {
           <p>Amueblado: ${publicacion.amueblado ? "Sí" : "No"}</p>
           <p>Dirección: ${publicacion.calle_inmueble}, ${publicacion.colonia_inmueble}, ${publicacion.cp_inmueble}</p>
           <p>Descripción: ${publicacion.descripcion_publicacion}</p>
-          <p>ID: ${publicacion.id_publicacion_venta}</p>
+          <p>Teléfono del propietario: ${publicacion.telefono_usuario}</p>
         </div>
       </div>
     `;
