@@ -30,8 +30,12 @@ body {
 }
 
 .detalle_info {
-    text-align: left;
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start; 
+    position: relative; 
 }
+
 
 .detalle_info h1 {
     color: #000000;
@@ -80,3 +84,18 @@ body {
     font-size: 24px;
     z-index: 1000; /* Asegura que esté por encima de todo */
 }
+
+.tel-highlight {
+    display: flex;
+    justify-content: end;
+    background-color: #f0e7bf; /* Fondo amarillo claro */
+    border: 2px solid #dfc16f; /* Borde dorado */
+    color: #333; /* Color de texto */
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 1.2em;
+    display: inline-block;
+    margin-top: 10px;
+}
+

@@ -26,22 +26,23 @@ async function cargarDetallePublicacion() {
 
     // Generar el contenido dinámico con los datos de la publicación
     propertyDetailsContainer.innerHTML = `
-      <div class="detalle_container">
-        <img src="${imagen}" alt="Casa Detalles" class="detalle-imagen">
-        <div class="detalle_info">
-          <h1>${publicacion.titulo_publicacion}</h1>
-          <h2>$${publicacion.precio_inmueble.toLocaleString()} MXN</h2>
-          <p>Superficie: ${publicacion.terreno_inmueble} m²</p>
-          <p>Habitaciones: ${publicacion.habitaciones}</p>
-          <p>Baños: ${publicacion.baños_int}</p>
-          <p>Garage: ${publicacion.garage ? "Sí" : "No"}</p>
-          <p>Amueblado: ${publicacion.amueblado ? "Sí" : "No"}</p>
-          <p>Dirección: ${publicacion.calle_inmueble}, ${publicacion.colonia_inmueble}, ${publicacion.cp_inmueble}</p>
-          <p>Descripción: ${publicacion.descripcion_publicacion}</p>
-          <p>Teléfono del propietario: ${publicacion.telefono_usuario}</p>
-        </div>
-      </div>
-    `;
+  <div class="detalle_container">
+    <img src="${imagen}" alt="Casa Detalles" class="detalle-imagen">
+    <div class="detalle_info">
+      <h1>${publicacion.titulo_publicacion}</h1>
+      <h2>$${publicacion.precio_inmueble.toLocaleString()} MXN</h2>
+      <p>Superficie: ${publicacion.terreno_inmueble} m²</p>
+      <p>Habitaciones: ${publicacion.habitaciones}</p>
+      <p>Baños: ${publicacion.baños_int}</p>
+      <p>Garage: ${publicacion.garage ? "Sí" : "No"}</p>
+      <p>Amueblado: ${publicacion.amueblado ? "Sí" : "No"}</p>
+      <p>Dirección: ${publicacion.calle_inmueble}, ${publicacion.colonia_inmueble}, ${publicacion.cp_inmueble}</p>
+      <p>Descripción: ${publicacion.descripcion_publicacion}</p>
+      <p class="tel-highlight">Teléfono del propietario: ${publicacion.telefono_usuario}</p>
+    </div>
+  </div>
+`;
+
   } catch (error) {
     console.error("Error al cargar los detalles:", error);
     propertyDetailsContainer.innerHTML = "<p>No se pudo cargar la información de la publicación. Intenta nuevamente más tarde.</p>";
