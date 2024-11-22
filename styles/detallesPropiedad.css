@@ -90,12 +90,13 @@ body {
     justify-content: end;
     background-color: #f0e7bf; /* Fondo amarillo claro */
     border: 2px solid #dfc16f; /* Borde dorado */
-    color: #333; /* Color de texto */
+    color: #333; 
     font-weight: bold;
     padding: 10px;
     border-radius: 10px;
     font-size: 1.2em;
     display: inline-block;
     margin-top: 10px;
+    margin-left: 455px;
 }
 

@@ -1,6 +1,8 @@
 // URL del endpoint de la API
 const API_URL = "http://localhost:5500/venta_publicaciones";
-      
+// Ruta base de las imágenes locales
+const IMAGENES_BASE = "assets/venta_assets/";
+
 // Contenedor principal donde se añadirán las publicaciones
 const mainContainer = document.getElementById("property-details");
 
@@ -14,18 +16,19 @@ async function cargarPublicaciones() {
     mainContainer.innerHTML = "";
 
     // Recorre las publicaciones obtenidas y genera el HTML dinámico
-    publicaciones.forEach((publicacion) => {
+    publicaciones.forEach((publicacion, index) => {
       // Crear un contenedor para cada publicación
       const casaContainer = document.createElement("div");
       casaContainer.classList.add("casa_container");
 
-      // Generar la ruta de la imagen (usa la primera imagen del arreglo, si existe)
-      const imagen = publicacion.imagenes.length > 0 ? publicacion.imagenes[0] : "assets/venta_assets/casa_placeholder.jpg";
+      // Generar la ruta de la imagen secuencial
+      const imagen = `${IMAGENES_BASE}${index + 1}.jpg`; // Asume que las imágenes se llaman "1.jpg", "2.jpg", etc.
 
       // Generar el HTML interno
       casaContainer.innerHTML = `
         <img src="${imagen}" alt="${publicacion.titulo_publicacion}" class="casa-imagen">
         <div class="info">
+          <h2>${publicacion.titulo_publicacion}</h2> <!-- Título obtenido de la base de datos -->
           <h3>$${publicacion.precio_inmueble.toLocaleString()} MXN</h3>
           <p>${publicacion.terreno_inmueble} m²</p>
           <p>Calle ${publicacion.calle_inmueble}, Colonia: ${publicacion.colonia_inmueble}</p>
@@ -37,7 +40,6 @@ async function cargarPublicaciones() {
       casaContainer.onclick = () => {
         window.location.href = `DetallesPropiedadventa.html?id=${publicacion.id_publicacion_venta}`;
       };
-      
 
       // Agregar el contenedor al DOM
       mainContainer.appendChild(casaContainer);
