@@ -1,7 +1,7 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #f9f9f9;
-    margin-top: 50px;
+    margin-top: 30px;
 }
 
 .main_container {
@@ -23,11 +23,14 @@ body {
 }
 
 .detalle-imagen {
-    width: 100%;
-    border-radius: 15px;
-    object-fit: cover;
-    margin-bottom: 20px;
-}
+    width: 700px; /* Ancho fijo */
+    height: 450px; /* Alto fijo */
+    object-fit: cover; /* Ajusta la imagen sin distorsionarla */
+    display: block; /* Asegura que la imagen sea un bloque */
+    margin: 0 auto; /* Centra la imagen horizontalmente */
+    border-radius: 8px; /* Opcional: redondea las esquinas */
+  }
+  
 
 .detalle_info {
     display: flex;
@@ -42,6 +45,8 @@ body {
     font-size: 2em;
     margin-bottom: 10px;
 }
+
+
 
 .detalle_info h2 {
     color: #5F4535;
@@ -89,7 +94,7 @@ body {
     display: flex;
     justify-content: end;
     background-color: #f0e7bf; /* Fondo amarillo claro */
-    border: 2px solid #dfc16f; /* Borde dorado */
+    border: 0px solid #dfc16f; /* Borde dorado */
     color: #333; 
     font-weight: bold;
     padding: 10px;
@@ -97,6 +102,5 @@ body {
     font-size: 1.2em;
     display: inline-block;
     margin-top: 10px;
-    margin-left: 455px;
 }
 
