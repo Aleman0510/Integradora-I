@@ -93,14 +93,23 @@ body {
 .tel-highlight {
     display: flex;
     justify-content: end;
-    background-color: #f0e7bf; /* Fondo amarillo claro */
-    border: 0px solid #dfc16f; /* Borde dorado */
+    background-color: #f7f7f7; /* Fondo amarillo claro */
+    border: 1px solid #93df6f; /* Borde dorado */
     color: #333; 
     font-weight: bold;
     padding: 10px;
     border-radius: 10px;
-    font-size: 1.2em;
+    font-size: 2.5em;
     display: inline-block;
     margin-top: 10px;
+    width: 200px;
 }
+
+.whatsapp-icon {
+    width: 40px;
+    height: 40px;
+    margin-left: 8px;
+    margin-right: 8px;
+    vertical-align: middle;
+  }
 
