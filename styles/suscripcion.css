@@ -1,68 +1,77 @@
-/* Clases para Suscripción */
-body {
-    font-family: 'Arial', sans-serif;
-    background-color: black;
-    color: black;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
-
-.subscription {
+/* ================ SECCIÓN DE SERVICIOS ================== */
+/* Imgenes de servicios */
+.services-section {
     text-align: center;
-    padding: 50px 20px;
-    padding-top: 100px; /* Más espacio arriba */
-}
-
-.subscription h2 {
-    font-size: 36px;
-    margin-bottom: 10px;
-}
-
-.plans {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    margin-top: 50px; /* Margen superior a los planes */
-}
-
-.plan {
     background-color: white;
-    padding: 40px;
-    border-radius: 10px;
-    width: 300px;
-    height: 500px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    height: 700px;
+    display: block;
+    margin: 0;
+}
+  
+  /* Imagen */
+.service-icon-a {
+    width: 100%; 
+    height: 147px;
+    margin-bottom: 15px; 
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10%; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+  
+   /* Imagen */
+.service-icon-b {
+    width: 100%;
+    height: 150px;
+    margin-bottom: 15px; 
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+  
+   /* Imagen */
+.service-icon-c {
+    width: 100%; 
+    height: auto;
+    margin-bottom: 15px; 
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10%; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); 
+}
+
+   /* Imagen */
+.service-icon-d {
+    width: 100%; 
+    height: auto;
+    margin-bottom: 15px; 
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10%; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); 
+}
+ 
+/* Título principal "Suscripciones" */
+.services-section h1 {
+    font-size: 50px;
+    color: black;
+}
+  
+/* Contenedor de los servicios */
+.services-container {
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;  
+    align-items: center;      
 }
 
-.plan h3 {
-    margin-top: 0;
-    font-size: 24px;
-}
-
-.plan ul {
-    flex-grow: 1; /* Empuja la lista hacia abajo */
-    margin-top: 20px;
-    text-align: left;
-}
-
-.plan p {
-    font-size: 20px;
-    margin-bottom: 20px;
-}
-
-
-
-.plan ul li {
-    font-size: 16px;
-    margin-bottom: 10px;
-    text-align: left;
-}
-
+/* Estilo del botón */
 .subscribe-btn {
     background-color: #7A5F4A;
     color: #fff;
@@ -71,22 +80,86 @@ body {
     cursor: pointer;
     border-radius: 5px;
     transition: background-color 0.3s;
-    align-self: center; /* Centra el botón horizontalmente */
+    text-align: center; 
+    display: block;      
+    margin: 0 auto;      
 }
 
-.subscribe-btn:hover {
-    background-color: #d4a76b;
-}
-
-footer {
-    margin-top: auto;
+.subscribe-btn:hover{
+    transform: scale(1.1);
+    background-color: #7A5F4A;
+    color:white;
     text-align: center;
-    padding: 20px;
-    background-color:white ;
-    color: black;
-}
+    justify-content: center;
+    transition: .3s ease;
+} 
 
-.precio {
-    font-size: 20px;
-    margin: 20px 0; /* Ajusta el margen superior e inferior */
+ 
+/* Tarjetas */
+.service-card {
+    background-color: #f1f1f1;
+    border-radius: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    width: 220px;
+    text-align: left;
+    margin: 0;
+}
+  
+.service-card h2 {
+    font-size: 1.5rem;
+    color: black;
+    margin-bottom: 15px;
+    text-align: center;
+}
+  
+.service-card p {
+    color: black;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+}
+  
+.service-card ul {
+    list-style: none;
+    padding: 0;
+}
+  
+.service-card ul li {
+    color: #333;
+    margin-bottom: 8px;
+    padding-left: 20px;
+    position: relative;
+}
+  
+.service-card ul li::before {
+    content: '✔';
+    color: #007BFF;
+    position: absolute;
+    left: 0;
+    font-size: 0.8rem;
+    top: 2px;
+}
+  
+  /* Cambiar el color del texto específico al hacer hover */
+.service-card:hover h2,
+.service-card:hover p,
+.service-card:hover ul li {
+    color: #fff;
+}
+  
+  /* Cambiar el color de los íconos de la lista también */
+.service-card:hover ul li::before {
+    color: #fff;
+}
+  
+.service-card:hover {
+    background-color: rgb(23, 28, 38);
+    color: #fff;
+    transform: translateY(-5px);
+    transition: all 0.3s ease;
+}
+  
+.service-card:hover ul li::before {
+    color: #fff;
 }
