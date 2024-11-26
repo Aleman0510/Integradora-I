@@ -24,7 +24,7 @@ body {
 
 .detalle-imagen {
     width: 700px; /* Ancho fijo */
-    height: 450px; /* Alto fijo */
+    height: auto; /* Alto fijo */
     object-fit: cover; /* Ajusta la imagen sin distorsionarla */
     display: block; /* Asegura que la imagen sea un bloque */
     margin: 0 auto; /* Centra la imagen horizontalmente */

@@ -1,57 +1,54 @@
-// Referencia al contenedor donde se mostrarán las propiedades
-const propertyDetailsContainer = document.getElementById("property-details");
+// URL del endpoint de la API
+const API_URL = "http://localhost:5500/renta_publicaciones";
+// Ruta base de las imágenes locales
+const IMAGENES_BASE = "assets/renta_assets/";
 
-// URL del endpoint de la API para obtener todas las publicaciones de renta
-const API_URL = `http://localhost:5500/renta_publicaciones`;
+// Contenedor principal donde se añadirán las publicaciones
+const mainContainer = document.getElementById("property-details");
 
-// Función para obtener y mostrar las publicaciones de renta
-async function cargarPublicacionesRenta() {
+// Función para cargar las publicaciones desde la API
+async function cargarPublicaciones() {
   try {
-    const response = await fetch(API_URL); // Hacer petición GET al endpoint
-    if (!response.ok) {
-      throw new Error("No se pudieron cargar las publicaciones");
-    }
+    const response = await fetch(API_URL); // Realiza la petición GET
+    const publicaciones = await response.json(); // Convierte la respuesta a JSON
 
-    const data = await response.json(); // Convertir la respuesta en JSON
+    // Limpia el contenedor antes de agregar contenido
+    mainContainer.innerHTML = "";
 
-    // Limpiar el contenedor antes de agregar nuevas publicaciones
-    propertyDetailsContainer.innerHTML = '';
+    // Recorre las publicaciones obtenidas y genera el HTML dinámico
+    publicaciones.forEach((publicacion, index) => {
+      // Crear un contenedor para cada publicación
+      const casaContainer = document.createElement("div");
+      casaContainer.classList.add("casa_container");
 
-    // Iterar sobre cada publicación y generar el HTML correspondiente
-    data.forEach(publicacion => {
-      // Verificar si hay imágenes y usar la primera imagen o un placeholder
-      const imagen = publicacion.imagenes && publicacion.imagenes.length > 0
-        ? `data:image/jpeg;base64,${publicacion.imagenes[0]}`
-        : "assets/venta_assets/casa_placeholder.jpg";
+      // Generar la ruta de la imagen secuencial
+      const imagen = `${IMAGENES_BASE}${index + 1}.jpg`; // Asume que las imágenes se llaman "1.jpg", "2.jpg", etc.
 
-      // Crear el contenedor de la propiedad
-      const propertyCard = document.createElement('div');
-      propertyCard.classList.add('casa_container');
-
-      // Añadir el evento onclick para redirigir a la página de detalles
-      propertyCard.onclick = () => {
-        location.href = `DetallesPropiedadrenta.html?id=${publicacion.id_publicacion_renta}`;
-      };
-
-      // Generar el contenido HTML de la propiedad
-      propertyCard.innerHTML = `
-        <img src="${imagen}" alt="Casa ${publicacion.id_publicacion_renta}" class="casa-imagen">
+      // Generar el HTML interno
+      casaContainer.innerHTML = `
+        <img src="${imagen}" alt="${publicacion.titulo_publicacion}" class="casa-imagen">
         <div class="info">
+          <h2>${publicacion.titulo_publicacion}</h2> <!-- Título obtenido de la base de datos -->
           <h3>$${publicacion.precio_inmueble.toLocaleString()} MXN</h3>
           <p>${publicacion.terreno_inmueble} m²</p>
-          <p>${publicacion.calle_inmueble}, ID:${publicacion.id_publicacion_renta}</p>
+          <p>Calle ${publicacion.calle_inmueble}, Colonia: ${publicacion.colonia_inmueble}</p>
           <i class="far fa-heart" onclick="toggleFavorite(event, '${publicacion.id_publicacion_renta}')"></i>
         </div>
       `;
 
-      // Añadir la tarjeta de la propiedad al contenedor principal
-      propertyDetailsContainer.appendChild(propertyCard);
+      // Configurar el comportamiento al hacer clic (redirigir a detalles de la propiedad)
+      casaContainer.onclick = () => {
+        window.location.href = `DetallesPropiedadventa.html?id=${publicacion.id_publicacion_renta}`;
+      };
+
+      // Agregar el contenedor al DOM
+      mainContainer.appendChild(casaContainer);
     });
   } catch (error) {
     console.error("Error al cargar las publicaciones:", error);
-    propertyDetailsContainer.innerHTML = "<p>No se pudieron cargar las publicaciones. Intenta nuevamente más tarde.</p>";
+    mainContainer.innerHTML = `<p>Error al cargar las publicaciones. Intenta de nuevo más tarde.</p>`;
   }
 }
 
-// Llamar a la función para cargar las publicaciones al cargar la página
-document.addEventListener("DOMContentLoaded", cargarPublicacionesRenta);
+// Cargar las publicaciones cuando la página esté lista
+document.addEventListener("DOMContentLoaded", cargarPublicaciones);
